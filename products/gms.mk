@@ -4,7 +4,31 @@ PRODUCT_PACKAGES += \
 	FakeStore \
 	IchnaeaNlpBackend \
 	NominatimGeocoderBackend \
-	AuroraServices \
 	FDroid \
 	FDroidPrivilegedExtension \
+	UnifiedNlp \
+	DroidGuard \
+	AuroraServices \
+	AuroraDroid \
+	AuroraStore \
+	TrichromeLibrary \
+	Xad \
+	BaiduInput \
+	Bitwarden \
+	Estrongs \
+	FirefoxBeta \
+	OpenCamera \
+	GhostCommander \
+	GhostCommanderSMB \
+	GhostCommanderWebDAV \
+	HMSCore \
+	Lawnchair \
+	QKSMS \
+	OsmAndPlus \
+	ScreenshotTile \
+	SimpleGalleryPro \
+	Snapseed \
+	Wandoujia \
+	LibreraReader \
+	KOReader \
 	additional_repos.xml
