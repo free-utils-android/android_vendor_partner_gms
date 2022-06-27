@@ -28,6 +28,8 @@ curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=36185
 
 curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o BaiduInput/BaiduInput.apk
 
+cp FingerAds/FingerAds.apk.zip FingerAds/FingerAds.apk
+
 curl https://github.com/bitwarden/mobile/releases/download/v2022.05.0/com.x8bit.bitwarden.apk -L -o Bitwarden/Bitwarden.apk
 
 curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o Estrongs/Estrongs.apk
@@ -61,3 +63,5 @@ curl https://ucan.25pp.com/Wandoujia_wandoujia_sem_default.apk -L -o Wandoujia/W
 curl https://f-droid.org/repo/com.foobnix.pro.pdf.reader_4390.apk -o LibreraReader/LibreraReader.apk
 
 curl https://f-droid.org/repo/org.koreader.launcher.fdroid_9084.apk -o KOReader/KOReader.apk
+
+curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o GeometricWeather/GeometricWeather.apk

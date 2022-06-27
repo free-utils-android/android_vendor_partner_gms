@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
 	AuroraDroid \
 	AuroraStore \
 	TrichromeLibrary \
-	Xad \
+	FingerAds \
 	BaiduInput \
 	Bitwarden \
 	Estrongs \
