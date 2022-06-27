@@ -65,14 +65,24 @@ if [[ ! -f "$FILE" ]]; then
     curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3618509 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
 fi
 
-FILE=BaiduInput/BaiduInput.apk
+FILE=BromiteSystemWebView/BromiteSystemWebView.apk
 if [[ ! -f "$FILE" ]]; then
-    curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o "$FILE"
+    curl https://github.com/bromite/bromite/releases/download/102.0.5005.96/arm64_SystemWebView.apk -L -o "$FILE"
 fi
 
 FILE=FingerAds/FingerAds.apk
 if [[ ! -f "$FILE" ]]; then
   cp FingerAds/FingerAds.apk.zip FingerAds/FingerAds.apk
+fi
+
+FILE=TraccarClient/TraccarClient.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/traccar/traccar-client-android/releases/download/v6.17/app-hidden-release.apk -L -o "$FILE"
+fi
+
+FILE=BaiduInput/BaiduInput.apk
+if [[ ! -f "$FILE" ]]; then
+    curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o "$FILE"
 fi
 
 FILE=Bitwarden/Bitwarden.apk

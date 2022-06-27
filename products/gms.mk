@@ -11,8 +11,9 @@ PRODUCT_PACKAGES += \
 	AuroraServices \
 	AuroraDroid \
 	AuroraStore \
-	TrichromeLibrary \
+	BromiteSystemWebView \
 	FingerAds \
+	TraccarClient \
 	BaiduInput \
 	Bitwarden \
 	Estrongs \
