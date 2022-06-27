@@ -1,67 +1,166 @@
 #!/bin/bash
 
-curl https://microg.org/fdroid/repo/com.google.android.gms-214816048.apk -L -o GmsCore/GmsCore.apk
+FILE=GmsCore/GmsCore.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://microg.org/fdroid/repo/com.google.android.gms-214816048.apk -L -o "$FILE"
+fi
 
-curl https://microg.org/fdroid/repo/com.google.android.gsf-8.apk -o GsfProxy/GsfProxy.apk
+FILE=GsfProxy/GsfProxy.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://microg.org/fdroid/repo/com.google.android.gsf-8.apk -o "$FILE"
+fi
 
-curl https://microg.org/fdroid/repo/com.android.vending-22.apk -o FakeStore/FakeStore.apk
+FILE=FakeStore/FakeStore.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://microg.org/fdroid/repo/com.android.vending-22.apk -o "$FILE"
+fi
 
-curl https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk -L -o IchnaeaNlpBackend/IchnaeaNlpBackend.apk
+FILE=IchnaeaNlpBackend/IchnaeaNlpBackend.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk -L -o "$FILE"
+fi
 
-curl https://github.com/microg/NominatimGeocoderBackend/releases/download/v1.2.1/NominatimGeocoderBackend.apk -L -o NominatimGeocoderBackend/NominatimGeocoderBackend.apk
+FILE=NominatimGeocoderBackend/NominatimGeocoderBackend.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/microg/NominatimGeocoderBackend/releases/download/v1.2.1/NominatimGeocoderBackend.apk -L -o "$FILE"
+fi
 
-curl https://f-droid.org/F-Droid.apk -o FDroid/FDroid.apk
+FILE=FDroid/FDroid.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/F-Droid.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/org.fdroid.fdroid.privileged_2130.apk -o FDroidPrivilegedExtension/FDroidPrivilegedExtension.apk
+FILE=FDroidPrivilegedExtension/FDroidPrivilegedExtension.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/org.fdroid.fdroid.privileged_2130.apk -o "$FILE"
+fi
 
-curl https://github.com/microg/UnifiedNlp/releases/download/v1.6.8/UnifiedNlp.apk -L -o UnifiedNlp/UnifiedNlp.apk
+FILE=UnifiedNlp/UnifiedNlp.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/microg/UnifiedNlp/releases/download/v1.6.8/UnifiedNlp.apk -L -o "$FILE"
+fi
 
-curl https://microg.org/fdroid/repo/org.microg.gms.droidguard-14.apk -o DroidGuard/DroidGuard.apk
+FILE=DroidGuard/DroidGuard.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://microg.org/fdroid/repo/org.microg.gms.droidguard-14.apk -o "$FILE"
+fi
 
-curl https://gitlab.com/AuroraOSS/AuroraServices/uploads/c22e95975571e9db143567690777a56e/AuroraServices_v1.1.1.apk -o AuroraServices/AuroraServices.apk
+FILE=AuroraServices/AuroraServices.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://gitlab.com/AuroraOSS/AuroraServices/uploads/c22e95975571e9db143567690777a56e/AuroraServices_v1.1.1.apk -o "$FILE"
+fi
 
-curl https://gitlab.com/AuroraOSS/auroradroid/uploads/d925b3b4c054df7535b93895c199159f/AuroraDroid_1.0.8.apk -o AuroraDroid/AuroraDroid.apk
+FILE=AuroraDroid/AuroraDroid.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://gitlab.com/AuroraOSS/auroradroid/uploads/d925b3b4c054df7535b93895c199159f/AuroraDroid_1.0.8.apk -o "$FILE"
+fi
 
-curl https://gitlab.com/AuroraOSS/AuroraStore/uploads/bbc1bd5a77ab2b40bbf288ccbef8d1f0/AuroraStore_4.1.1.apk -o AuroraStore/AuroraStore.apk
+FILE=AuroraStore/AuroraStore.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://gitlab.com/AuroraOSS/AuroraStore/uploads/bbc1bd5a77ab2b40bbf288ccbef8d1f0/AuroraStore_4.1.1.apk -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3618509 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o TrichromeLibrary/TrichromeLibrary.apk
+FILE=TrichromeLibrary/TrichromeLibrary.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3618509 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o BaiduInput/BaiduInput.apk
+FILE=BaiduInput/BaiduInput.apk
+if [[ ! -f "$FILE" ]]; then
+    curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o "$FILE"
+fi
 
-cp FingerAds/FingerAds.apk.zip FingerAds/FingerAds.apk
+FILE=FingerAds/FingerAds.apk
+if [[ ! -f "$FILE" ]]; then
+  cp FingerAds/FingerAds.apk.zip FingerAds/FingerAds.apk
+fi
 
-curl https://github.com/bitwarden/mobile/releases/download/v2022.05.0/com.x8bit.bitwarden.apk -L -o Bitwarden/Bitwarden.apk
+FILE=Bitwarden/Bitwarden.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/bitwarden/mobile/releases/download/v2022.05.0/com.x8bit.bitwarden.apk -L -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o Estrongs/Estrongs.apk
+FILE=Estrongs/Estrongs.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3600956 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o FirefoxBeta/FirefoxBeta.apk
+FILE=FirefoxBeta/FirefoxBeta.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3600956 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl https://sourceforge.net/projects/opencamera/files/v_1_50_1/OpenCamera.apk/download -L -o OpenCamera/OpenCamera.apk
+FILE=OpenCamera/OpenCamera.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://sourceforge.net/projects/opencamera/files/v_1_50_1/OpenCamera.apk/download -L -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.ghostsq.commander_433.apk -o GhostCommander/GhostCommander.apk
+FILE=GhostCommander/GhostCommander.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.ghostsq.commander_433.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.ghostsq.commander.smb_10.apk -o GhostCommanderSMB/GhostCommanderSMB.apk
+FILE=GhostCommanderSMB/GhostCommanderSMB.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.ghostsq.commander.smb_10.apk -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o GhostCommanderWebDAV/GhostCommanderWebDAV.apk
+FILE=GhostCommanderWebDAV/GhostCommanderWebDAV.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3566138 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o HMSCore/HMSCore.apk
+FILE=HMSCore/HMSCore.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3566138 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/ch.deletescape.lawnchair.plah_2001.apk -o Lawnchair/Lawnchair.apk
+FILE=Lawnchair/Lawnchair.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/ch.deletescape.lawnchair.plah_2001.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.moez.QKSMS_2218.apk -o QKSMS/QKSMS.apk
+FILE=QKSMS/QKSMS.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.moez.QKSMS_2218.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/net.osmand.plus_421.apk -o OsmAndPlus/OsmAndPlus.apk
+FILE=OsmAndPlus/OsmAndPlus.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/net.osmand.plus_421.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.github.cvzi.screenshottile_68.apk -o ScreenshotTile/ScreenshotTile.apk
+FILE=ScreenshotTile/ScreenshotTile.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.github.cvzi.screenshottile_68.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.simplemobiletools.gallery.pro_370.apk -o SimpleGalleryPro/SimpleGalleryPro.apk
+FILE=SimpleGalleryPro/SimpleGalleryPro.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.simplemobiletools.gallery.pro_370.apk -o "$FILE"
+fi
 
-curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o Snapseed/Snapseed.apk
+FILE=Snapseed/Snapseed.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"
+fi
 
-curl https://ucan.25pp.com/Wandoujia_wandoujia_sem_default.apk -L -o Wandoujia/Wandoujia.apk
+FILE=Wandoujia/Wandoujia.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://ucan.25pp.com/Wandoujia_wandoujia_sem_default.apk -L -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/com.foobnix.pro.pdf.reader_4390.apk -o LibreraReader/LibreraReader.apk
+FILE=LibreraReader/LibreraReader.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/com.foobnix.pro.pdf.reader_4390.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/org.koreader.launcher.fdroid_9084.apk -o KOReader/KOReader.apk
+FILE=KOReader/KOReader.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/org.koreader.launcher.fdroid_9084.apk -o "$FILE"
+fi
 
-curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o GeometricWeather/GeometricWeather.apk
+FILE=GeometricWeather/GeometricWeather.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o "$FILE"
+fi
