@@ -1,20 +1,5 @@
 #!/bin/bash
 
-FILE=GmsCore/GmsCore.apk
-if [[ ! -f "$FILE" ]]; then
-    curl https://microg.org/fdroid/repo/com.google.android.gms-214816048.apk -L -o "$FILE"
-fi
-
-FILE=GsfProxy/GsfProxy.apk
-if [[ ! -f "$FILE" ]]; then
-    curl https://microg.org/fdroid/repo/com.google.android.gsf-8.apk -o "$FILE"
-fi
-
-FILE=FakeStore/FakeStore.apk
-if [[ ! -f "$FILE" ]]; then
-    curl https://microg.org/fdroid/repo/com.android.vending-22.apk -o "$FILE"
-fi
-
 FILE=IchnaeaNlpBackend/IchnaeaNlpBackend.apk
 if [[ ! -f "$FILE" ]]; then
     curl https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk -L -o "$FILE"
