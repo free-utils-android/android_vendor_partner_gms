@@ -1,7 +1,4 @@
 PRODUCT_PACKAGES += \
-	GmsCore \
-	GsfProxy \
-	FakeStore \
 	IchnaeaNlpBackend \
 	NominatimGeocoderBackend \
 	FDroid \
@@ -12,6 +9,7 @@ PRODUCT_PACKAGES += \
 	AuroraDroid \
 	AuroraStore \
 	BromiteSystemWebView \
+	SetEdit \
 	FingerAds \
 	TraccarClient \
 	BaiduInput \
@@ -33,4 +31,10 @@ PRODUCT_PACKAGES += \
 	LibreraReader \
 	KOReader \
 	GeometricWeather \
+	Zulip \
+	Weixin \
+	QQ \
+	QQPim \
+	ZeroTierOne \
+	Davx5 \
 	additional_repos.xml

@@ -27,7 +27,7 @@ fi
 
 FILE=FDroid/FDroid.apk
 if [[ ! -f "$FILE" ]]; then
-    curl https://f-droid.org/F-Droid.apk -o "$FILE"
+    curl https://f-droid.org/repo/org.fdroid.fdroid_1015052.apk -o "$FILE"
 fi
 
 FILE=FDroidPrivilegedExtension/FDroidPrivilegedExtension.apk
@@ -70,6 +70,11 @@ if [[ ! -f "$FILE" ]]; then
     curl https://github.com/bromite/bromite/releases/download/102.0.5005.96/arm64_SystemWebView.apk -L -o "$FILE"
 fi
 
+FILE=SetEdit/SetEdit.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/MuntashirAkon/SetEdit/releases/download/v2.2/SetEdit_v2.2.apk -L -o "$FILE"
+fi
+
 FILE=FingerAds/FingerAds.apk
 if [[ ! -f "$FILE" ]]; then
   cp FingerAds/FingerAds.apk.zip FingerAds/FingerAds.apk
@@ -77,7 +82,7 @@ fi
 
 FILE=TraccarClient/TraccarClient.apk
 if [[ ! -f "$FILE" ]]; then
-    curl https://github.com/traccar/traccar-client-android/releases/download/v6.17/app-hidden-release.apk -L -o "$FILE"
+    curl https://github.com/traccar/traccar-client-android/releases/download/v6.17/app-regular-release.apk -L -o "$FILE"
 fi
 
 FILE=BaiduInput/BaiduInput.apk
@@ -172,5 +177,35 @@ fi
 
 FILE=GeometricWeather/GeometricWeather.apk
 if [[ ! -f "$FILE" ]]; then
-    curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o "$FILE"
+    curl https://github.com/WangDaYeeeeee/GeometricWeather/releases/download/3.102/GeometricWeather.3.102_fdroid.apk -L -o "$FILE"
+fi
+
+FILE=Zulip/Zulip.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/zulip/zulip-mobile/releases/download/v27.186/app-arm64-v8a-release.apk -L -o "$FILE"
+fi
+
+FILE=Weixin/Weixin.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://dldir1.qq.com/weixin/android/weixin8024android2180_arm64.apk -L -o "$FILE"
+fi
+
+FILE=QQ/QQ.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://downv6.qq.com/qqweb/QQ_1/android_apk/Android_8.8.95.8265_537122601_HB_64.apk -L -o "$FILE"
+fi
+
+FILE=QQPim/QQPim.apk
+if [[ ! -f "$FILE" ]]; then
+    curl "https://qqwx.qq.com/s?aid=index&p=11&c=102021&vt=1&pf=0" -L -o "$FILE"
+fi
+
+FILE=ZeroTierOne/ZeroTierOne.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://download.zerotier.com/dist/ZeroTierOne.apk -o "$FILE"
+fi
+
+FILE=Davx5/Davx5.apk
+if [[ ! -f "$FILE" ]]; then
+    curl https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.2-ose/davx5-ose-4.2.2-standard-release.apk -L -o "$FILE"
 fi
