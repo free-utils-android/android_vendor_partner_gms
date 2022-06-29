@@ -1,10 +1,15 @@
 PRODUCT_PACKAGES += \
+	GoogleServicesFramework \
+	GooglePlayServices \
+	GooglePlayStore \
+	AndroidSystemIntelligence \
+	GooglePartnerSetup \
+	AndroidSetup \
 	IchnaeaNlpBackend \
 	NominatimGeocoderBackend \
-	FDroid \
-	FDroidPrivilegedExtension \
 	UnifiedNlp \
-	DroidGuard \
+	FDroidPrivilegedExtension \
+	FDroid \
 	AuroraServices \
 	AuroraDroid \
 	AuroraStore \
@@ -19,10 +24,10 @@ PRODUCT_PACKAGES += \
 	OpenCamera \
 	GhostCommander \
 	GhostCommanderSMB \
-	GhostCommanderWebDAV \
 	HMSCore \
 	Lawnchair \
-	QKSMS \
+	RotationControl \
+	Messages \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
@@ -31,10 +36,8 @@ PRODUCT_PACKAGES += \
 	LibreraReader \
 	KOReader \
 	GeometricWeather \
-	Zulip \
-	Weixin \
-	QQ \
 	QQPim \
 	ZeroTierOne \
 	Davx5 \
+	VLC \
 	additional_repos.xml
