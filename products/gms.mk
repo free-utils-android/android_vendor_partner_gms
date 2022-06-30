@@ -2,7 +2,6 @@ PRODUCT_PACKAGES += \
 	GoogleServicesFramework \
 	GooglePlayServices \
 	GooglePlayStore \
-	AndroidSystemIntelligence \
 	GooglePartnerSetup \
 	AndroidSetup \
 	IchnaeaNlpBackend \

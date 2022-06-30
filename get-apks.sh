@@ -32,11 +32,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "31.2.23-21" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=AndroidSystemIntelligence
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3589597 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "S.20.playstore.pixel4.451178336" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=AndroidSystemIntelligence
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3589597 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "S.20.playstore.pixel4.451178336" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=GooglePartnerSetup
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
