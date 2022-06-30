@@ -3,7 +3,6 @@ PRODUCT_PACKAGES += \
 	GooglePlayServices \
 	GooglePlayStore \
 	GooglePartnerSetup \
-	AndroidSetup \
 	IchnaeaNlpBackend \
 	NominatimGeocoderBackend \
 	UnifiedNlp \

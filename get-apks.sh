@@ -44,11 +44,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "100.404341199" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=AndroidSetup
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3427060 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "232.431119513" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=AndroidSetup
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3427060 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "232.431119513" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=IchnaeaNlpBackend
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
