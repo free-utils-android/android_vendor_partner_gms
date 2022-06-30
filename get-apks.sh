@@ -159,21 +159,21 @@ fi
 
 FILE=GhostCommander
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/com.ghostsq.commander_433.apk -o "$FILE"/"$FILE".apk
-	echo "1.61b3" > GhostCommander/"$VERSION_CODE"
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3313421 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "1.60.7" > GhostCommander/"$VERSION_CODE"
 fi
 
 FILE=GhostCommanderSMB
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/com.ghostsq.commander.smb_10.apk -o "$FILE"/"$FILE".apk
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=1809657 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
 	echo "1.02" > "$FILE"/"$VERSION_CODE"
 fi
 
-#FILE=GhostCommanderWebDAV
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "1.0.4" > "$FILE"/"$VERSION_CODE"
-#fi
+FILE=GhostCommanderWebDAV
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "1.0.4" > "$FILE"/"$VERSION_CODE"
+fi
 
 FILE=HMSCore
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -181,11 +181,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "6.5.1.302" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Lawnchair
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/ch.deletescape.lawnchair.plah_2001.apk -o "$FILE"/"$FILE".apk
-	echo "1.2.1.2001" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=Lawnchair
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://f-droid.org/repo/ch.deletescape.lawnchair.plah_2001.apk -o "$FILE"/"$FILE".apk
+#	echo "1.2.1.2001" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=RotationControl
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -193,11 +193,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "1.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Messages
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645711 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "20220623_04_RC00.phone" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=Messages
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645711 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "20220623_04_RC00.phone" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=OsmAndPlus
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then

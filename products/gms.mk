@@ -19,9 +19,7 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	HMSCore \
-	Lawnchair \
 	RotationControl \
-	Messages \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
