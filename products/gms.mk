@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	HMSCore \
+	Lawnchair \
 	RotationControl \
 	OsmAndPlus \
 	ScreenshotTile \
