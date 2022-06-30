@@ -14,23 +14,23 @@ VERSION_CODE=.version_code
 #	echo "aml_ext_311812040" > "$FILE"/"$VERSION_CODE"
 #fi
 
-FILE=GoogleServicesFramework
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3459755 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "12-7567768" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=GoogleServicesFramework
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3459755 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "12-7567768" > "$FILE"/"$VERSION_CODE"
+#fi
 
-FILE=GooglePlayServices
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3635770 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "22.24.13" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=GooglePlayServices
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3635770 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "22.24.13" > "$FILE"/"$VERSION_CODE"
+#fi
 
-FILE=GooglePlayStore
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645411 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "31.2.23-21" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=GooglePlayStore
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645411 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "31.2.23-21" > "$FILE"/"$VERSION_CODE"
+#fi
 
 #FILE=AndroidSystemIntelligence
 #if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -38,11 +38,11 @@ fi
 #	echo "S.20.playstore.pixel4.451178336" > "$FILE"/"$VERSION_CODE"
 #fi
 
-FILE=GooglePartnerSetup
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3372816 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "100.404341199" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=GooglePartnerSetup
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3372816 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "100.404341199" > "$FILE"/"$VERSION_CODE"
+#fi
 
 #FILE=AndroidSetup
 #if [[ ! -f "$FILE"/"$FILE".apk ]]; then

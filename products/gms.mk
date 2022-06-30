@@ -1,8 +1,4 @@
 PRODUCT_PACKAGES += \
-	GoogleServicesFramework \
-	GooglePlayServices \
-	GooglePlayStore \
-	GooglePartnerSetup \
 	IchnaeaNlpBackend \
 	NominatimGeocoderBackend \
 	UnifiedNlp \
