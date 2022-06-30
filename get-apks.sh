@@ -193,11 +193,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "1.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-#FILE=Messages
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645711 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "20220623_04_RC00.phone" > "$FILE"/"$VERSION_CODE"
-#fi
+FILE=Messages
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645711 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "20220623_04_RC00.phone" > "$FILE"/"$VERSION_CODE"
+fi
 
 FILE=OsmAndPlus
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -285,6 +285,6 @@ fi
 
 FILE=VLC
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/org.videolan.vlc_13040408.apk -o "$FILE"/"$FILE".apk
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3173236 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
 	echo "3.4.4" > "$FILE"/"$VERSION_CODE"
 fi
