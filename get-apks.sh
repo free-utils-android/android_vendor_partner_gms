@@ -181,11 +181,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "6.5.1.302" > "$FILE"/"$VERSION_CODE"
 fi
 
-#FILE=Lawnchair
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://f-droid.org/repo/ch.deletescape.lawnchair.plah_2001.apk -o "$FILE"/"$FILE".apk
-#	echo "1.2.1.2001" > "$FILE"/"$VERSION_CODE"
-#fi
+FILE=Lawnchair
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://github.com/LawnchairLauncher/lawnchair/releases/download/v12.1.0-alpha.3/Lawnchair.12.1.0.Alpha.3.apk -L -o "$FILE"/"$FILE".apk
+	echo "12.1.0-alpha.3" > "$FILE"/"$VERSION_CODE"
+fi
 
 FILE=RotationControl
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
