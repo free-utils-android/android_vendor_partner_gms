@@ -135,8 +135,8 @@ fi
 
 FILE=Bitwarden
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://github.com/bitwarden/mobile/releases/download/v2022.05.0/com.x8bit.bitwarden.apk -L -o "$FILE"/"$FILE".apk
-	echo "2022.05.0" > "$FILE"/"$VERSION_CODE"
+	curl https://github.com/bitwarden/mobile/releases/download/v2022.6.0/com.x8bit.bitwarden.apk -L -o "$FILE"/"$FILE".apk
+	echo "2022.6.0" > "$FILE"/"$VERSION_CODE"
 fi
 
 #FILE=Estrongs
