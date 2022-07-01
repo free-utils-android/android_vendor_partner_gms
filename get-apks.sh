@@ -231,14 +231,14 @@ fi
 
 FILE=LibreraReader
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/com.foobnix.pro.pdf.reader_4390.apk -o "$FILE"/"$FILE".apk
-	echo "8.5.12" > "$FILE"/"$VERSION_CODE"
+	curl https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk -L -o "$FILE"/"$FILE".apk
+	echo "8.5.23" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=KOReader
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/org.koreader.launcher.fdroid_9084.apk -o "$FILE"/"$FILE".apk
-	echo "2022.05.1" > "$FILE"/"$VERSION_CODE"
+	curl https://github.com/koreader/koreader/releases/download/v2022.06/koreader-android-arm-v2022.06.apk -L -o "$FILE"/"$FILE".apk
+	echo "2022.06" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=GeometricWeather

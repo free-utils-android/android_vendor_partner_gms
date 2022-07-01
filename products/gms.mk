@@ -13,7 +13,6 @@ PRODUCT_PACKAGES += \
 	TraccarClient \
 	BaiduInput \
 	Bitwarden \
-	Estrongs \
 	FirefoxBeta \
 	OpenCamera \
 	GhostCommander \
