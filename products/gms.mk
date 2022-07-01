@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
 	HMSCore \
 	Lawnchair \
 	RotationControl \
-	Messages \
+	QKSMS \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \

@@ -193,10 +193,10 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "1.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Messages
+FILE=QKSMS
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3646153 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "20220621_01_RC01.phone" > "$FILE"/"$VERSION_CODE"
+	curl https://github.com/moezbhatti/qksms/releases/download/v3.9.4/QKSMS-v3.9.4.apk -L -o "$FILE"/"$FILE".apk
+	echo "3.9.4" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=OsmAndPlus
