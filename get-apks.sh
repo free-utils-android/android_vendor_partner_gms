@@ -139,11 +139,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "2022.05.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Estrongs
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "4.2.9.6" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=Estrongs
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "4.2.9.6" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=FirefoxBeta
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -169,11 +169,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "1.02" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=GhostCommanderWebDAV
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "1.0.4" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=GhostCommanderWebDAV
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "1.0.4" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=HMSCore
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
