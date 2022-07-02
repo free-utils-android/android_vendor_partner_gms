@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
 	Davx5 \
 	VLC \
 	Bitwarden \
+	GoogleAuthenticator \
 	FirefoxBeta \
 	OpenCamera \
 	GhostCommander \
