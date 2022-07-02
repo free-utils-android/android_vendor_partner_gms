@@ -2,54 +2,6 @@
 
 VERSION_CODE=.version_code
 
-#FILE=AndroidSharedLibrary
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2962893 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "1" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=AndroidServicesLibrary
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3607200 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "aml_ext_311812040" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=GoogleServicesFramework
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3459755 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "12-7567768" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=GooglePlayServices
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3635770 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "22.24.13" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=GooglePlayStore
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3645411 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "31.2.23-21" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=AndroidSystemIntelligence
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3589597 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "S.20.playstore.pixel4.451178336" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=GooglePartnerSetup
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3372816 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "100.404341199" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=AndroidSetup
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3427060 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "232.431119513" > "$FILE"/"$VERSION_CODE"
-#fi
-
 FILE=IchnaeaNlpBackend
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk -L -o "$FILE"/"$FILE".apk
@@ -98,11 +50,6 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "4.1.1" > "$FILE"/"$VERSION_CODE"
 fi
 
-#FILE=TrichromeLibrary
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3618509 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#fi
-
 FILE=BromiteSystemWebView
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://github.com/bromite/bromite/releases/download/102.0.5005.96/arm64_SystemWebView.apk -L -o "$FILE"/"$FILE".apk
@@ -133,17 +80,47 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "10.13.0.20" > "$FILE"/"$VERSION_CODE"
 fi
 
+FILE=ZeroTierOne
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://download.zerotier.com/dist/ZeroTierOne.apk -o "$FILE"/"$FILE".apk
+	echo "1.8.9-1" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=WireGuard
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3497033 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "1.0.20220516" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=Davx5
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.2-ose/davx5-ose-4.2.2-standard-release.apk -L -o "$FILE"/"$FILE".apk
+	echo "4.2.2-ose" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=VLC
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3173236 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "3.4.4" > "$FILE"/"$VERSION_CODE"
+fi
+
 FILE=Bitwarden
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://github.com/bitwarden/mobile/releases/download/v2022.6.0/com.x8bit.bitwarden.apk -L -o "$FILE"/"$FILE".apk
 	echo "2022.6.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-#FILE=Estrongs
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "4.2.9.6" > "$FILE"/"$VERSION_CODE"
-#fi
+FILE=MicrosoftAuthenticator
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3601137 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "6.2206.3973" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=GoogleAuthenticator
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=1162318 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "5.10" > "$FILE"/"$VERSION_CODE"
+fi
 
 FILE=FirefoxBeta
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -247,6 +224,12 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "3.102" > "$FILE"/"$VERSION_CODE"
 fi
 
+#FILE=Estrongs
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+#	echo "4.2.9.6" > "$FILE"/"$VERSION_CODE"
+#fi
+
 #FILE=Zulip
 #if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 #	curl https://github.com/zulip/zulip-mobile/releases/download/v27.186/app-arm64-v8a-release.apk -L -o "$FILE"/"$FILE".apk
@@ -270,21 +253,3 @@ fi
 #	curl "https://qqwx.qq.com/s?aid=index&p=11&c=102021&vt=1&pf=0" -L -o "$FILE"/"$FILE".apk
 #	echo "8.0.5.298000" > "$FILE"/"$VERSION_CODE"
 #fi
-
-FILE=ZeroTierOne
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://download.zerotier.com/dist/ZeroTierOne.apk -o "$FILE"/"$FILE".apk
-	echo "1.8.9-1" > "$FILE"/"$VERSION_CODE"
-fi
-
-FILE=Davx5
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.2-ose/davx5-ose-4.2.2-standard-release.apk -L -o "$FILE"/"$FILE".apk
-	echo "4.2.2-ose" > "$FILE"/"$VERSION_CODE"
-fi
-
-FILE=VLC
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3173236 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "3.4.4" > "$FILE"/"$VERSION_CODE"
-fi

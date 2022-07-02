@@ -12,6 +12,10 @@ PRODUCT_PACKAGES += \
 	FingerAds \
 	TraccarClient \
 	BaiduInput \
+	ZeroTierOne \
+	WireGuard \
+	Davx5 \
+	VLC \
 	Bitwarden \
 	FirefoxBeta \
 	OpenCamera \
@@ -29,7 +33,4 @@ PRODUCT_PACKAGES += \
 	LibreraReader \
 	KOReader \
 	GeometricWeather \
-	ZeroTierOne \
-	Davx5 \
-	VLC \
 	additional_repos.xml
