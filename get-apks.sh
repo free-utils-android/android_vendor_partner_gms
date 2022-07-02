@@ -265,11 +265,11 @@ fi
 #	echo "" > "$FILE"/"$VERSION_CODE"
 #fi
 
-FILE=QQPim
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl "https://qqwx.qq.com/s?aid=index&p=11&c=102021&vt=1&pf=0" -L -o "$FILE"/"$FILE".apk
-	echo "8.0.5.298000" > "$FILE"/"$VERSION_CODE"
-fi
+#FILE=QQPim
+#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+#	curl "https://qqwx.qq.com/s?aid=index&p=11&c=102021&vt=1&pf=0" -L -o "$FILE"/"$FILE".apk
+#	echo "8.0.5.298000" > "$FILE"/"$VERSION_CODE"
+#fi
 
 FILE=ZeroTierOne
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then

@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
 	LibreraReader \
 	KOReader \
 	GeometricWeather \
-	QQPim \
 	ZeroTierOne \
 	Davx5 \
 	VLC \
