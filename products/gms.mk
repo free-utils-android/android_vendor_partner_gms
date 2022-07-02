@@ -32,6 +32,5 @@ PRODUCT_PACKAGES += \
 	Snapseed \
 	Wandoujia \
 	LibreraReader \
-	KOReader \
 	GeometricWeather \
 	additional_repos.xml

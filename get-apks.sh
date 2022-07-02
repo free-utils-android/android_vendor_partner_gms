@@ -110,12 +110,6 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "2022.6.0" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=MicrosoftAuthenticator
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3601137 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "6.2206.3973" > "$FILE"/"$VERSION_CODE"
-fi
-
 FILE=GoogleAuthenticator
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=1162318 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
@@ -145,12 +139,6 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=1809657 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
 	echo "1.02" > "$FILE"/"$VERSION_CODE"
 fi
-
-#FILE=GhostCommanderWebDAV
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "1.0.4" > "$FILE"/"$VERSION_CODE"
-#fi
 
 FILE=HMSCore
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -212,44 +200,8 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "8.5.23" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=KOReader
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://github.com/koreader/koreader/releases/download/v2022.06/koreader-android-arm-v2022.06.apk -L -o "$FILE"/"$FILE".apk
-	echo "2022.06" > "$FILE"/"$VERSION_CODE"
-fi
-
 FILE=GeometricWeather
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o "$FILE"/"$FILE".apk
 	echo "3.102" > "$FILE"/"$VERSION_CODE"
 fi
-
-#FILE=Estrongs
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3238334 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-#	echo "4.2.9.6" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=Zulip
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://github.com/zulip/zulip-mobile/releases/download/v27.186/app-arm64-v8a-release.apk -L -o "$FILE"/"$FILE".apk
-#	echo "" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=Weixin
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://dldir1.qq.com/weixin/android/weixin8024android2180_arm64.apk -L -o "$FILE"/"$FILE".apk
-#	echo "" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=QQ
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl https://downv6.qq.com/qqweb/QQ_1/android_apk/Android_8.8.95.8265_537122601_HB_64.apk -L -o "$FILE"/"$FILE".apk
-#	echo "" > "$FILE"/"$VERSION_CODE"
-#fi
-
-#FILE=QQPim
-#if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-#	curl "https://qqwx.qq.com/s?aid=index&p=11&c=102021&vt=1&pf=0" -L -o "$FILE"/"$FILE".apk
-#	echo "8.0.5.298000" > "$FILE"/"$VERSION_CODE"
-#fi
