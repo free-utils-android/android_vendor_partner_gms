@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
 	ZeroTierOne \
 	WireGuard \
 	Davx5 \
+	NextCloud \
 	VLC \
 	Bitwarden \
 	GoogleAuthenticator \
@@ -21,6 +22,7 @@ PRODUCT_PACKAGES += \
 	OpenCamera \
 	GhostCommander \
 	GhostCommanderSMB \
+	GhostCommanderWebDAV \
 	HMSCore \
 	Lawnchair \
 	RotationControl \
@@ -29,6 +31,6 @@ PRODUCT_PACKAGES += \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	Snapseed \
-	Wandoujia \
+	CoolApk \
 	LibreraReader \
 	fdroid_microg_repos.xml

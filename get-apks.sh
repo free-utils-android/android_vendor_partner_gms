@@ -50,10 +50,10 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "4.1.1" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=BromiteSystemWebView
+FILE=TrichromeLibrary
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://github.com/bromite/bromite/releases/download/102.0.5005.96/arm64_SystemWebView.apk -L -o "$FILE"/"$FILE".apk
-	echo "102.0.5005.96" > "$FILE"/"$VERSION_CODE"
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3649596 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "103.0.5060.70" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=SetEdit
@@ -90,6 +90,12 @@ FILE=Davx5
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.2-ose/davx5-ose-4.2.2-standard-release.apk -L -o "$FILE"/"$FILE".apk
 	echo "4.2.2-ose" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=NextCloud
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3588091&forcebaseapk=true -A "Mozilla/5.0 ( ; ; rv: ) / / "  -L -o "$FILE"/"$FILE".apk
+	echo "3.20.3" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=VLC
@@ -132,6 +138,12 @@ FILE=GhostCommanderSMB
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=1809657 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
 	echo "1.02" > "$FILE"/"$VERSION_CODE"
+fi
+
+FILE=GhostCommanderWebDAV
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2875434 -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "1.04" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=HMSCore
