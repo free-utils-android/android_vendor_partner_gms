@@ -74,12 +74,6 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "6.17" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=BaiduInput
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl "https://srf.baidu.com/?c=j&e=d&from=1000e&platform=android&ref=index_entrance_android_click" -L -o "$FILE"/"$FILE".apk
-	echo "10.13.0.20" > "$FILE"/"$VERSION_CODE"
-fi
-
 FILE=ZeroTierOne
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://download.zerotier.com/dist/ZeroTierOne.apk -o "$FILE"/"$FILE".apk
@@ -172,8 +166,8 @@ fi
 
 FILE=ScreenshotTile
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/com.github.cvzi.screenshottile_68.apk -o "$FILE"/"$FILE".apk
-	echo "1.17.2" > "$FILE"/"$VERSION_CODE"
+	curl https://github.com/cvzi/ScreenshotTile/releases/download/v1.18.0/com.github.cvzi.screenshottile_69.apk -L -o "$FILE"/"$FILE".apk
+	echo "1.18.0" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=SimpleGalleryPro
@@ -188,20 +182,14 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "2.19.1.303051424" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Wandoujia
+FILE=CoolApk
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://ucan.25pp.com/Wandoujia_wandoujia_sem_default.apk -L -o "$FILE"/"$FILE".apk
-	echo "8.1.2" > "$FILE"/"$VERSION_CODE"
+	curl "https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web" -L -o "$FILE"/"$FILE".apk
+	echo "12.3.1" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=LibreraReader
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	curl https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk -L -o "$FILE"/"$FILE".apk
 	echo "8.5.23" > "$FILE"/"$VERSION_CODE"
-fi
-
-FILE=GeometricWeather
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl https://f-droid.org/repo/wangdaye.com.geometricweather_30102.apk -o "$FILE"/"$FILE".apk
-	echo "3.102" > "$FILE"/"$VERSION_CODE"
 fi

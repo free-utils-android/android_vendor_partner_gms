@@ -11,7 +11,6 @@ PRODUCT_PACKAGES += \
 	SetEdit \
 	FingerAds \
 	TraccarClient \
-	BaiduInput \
 	ZeroTierOne \
 	WireGuard \
 	Davx5 \
@@ -32,5 +31,4 @@ PRODUCT_PACKAGES += \
 	Snapseed \
 	Wandoujia \
 	LibreraReader \
-	GeometricWeather \
-	additional_repos.xml
+	fdroid_microg_repos.xml
