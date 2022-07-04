@@ -17,4 +17,3 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := privapp-permissions-org.fdroid.fdroid.privileged.xml
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
-

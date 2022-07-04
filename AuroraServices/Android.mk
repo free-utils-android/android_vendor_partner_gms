@@ -17,4 +17,3 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := privapp-permissions-com.aurora.services.xml
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
-
