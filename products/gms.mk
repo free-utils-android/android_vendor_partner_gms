@@ -23,14 +23,12 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
-	HMSCore \
 	Lawnchair \
 	RotationControl \
 	QKSMS \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	Snapseed \
 	CoolApk \
 	LibreraReader \
 	fdroid_microg_repos.xml

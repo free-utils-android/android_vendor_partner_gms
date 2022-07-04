@@ -146,11 +146,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "1.04" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=HMSCore
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3566138" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "6.5.1.302" > "$FILE"/"$VERSION_CODE"
-fi
+# FILE=HMSCore
+# if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	# curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3566138" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	# echo "6.5.1.302" > "$FILE"/"$VERSION_CODE"
+# fi
 
 FILE=Lawnchair
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
@@ -188,11 +188,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "6.23.12" > "$FILE"/"$VERSION_CODE"
 fi
 
-FILE=Snapseed
-if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	echo "2.19.1.303051424" > "$FILE"/"$VERSION_CODE"
-fi
+# FILE=Snapseed
+# if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	# curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	# echo "2.19.1.303051424" > "$FILE"/"$VERSION_CODE"
+# fi
 
 FILE=CoolApk
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
