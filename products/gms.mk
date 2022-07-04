@@ -28,6 +28,6 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	HeyTap \
+	TencentMyApp \
 	LibreraReader \
 	additional_repos.xml
