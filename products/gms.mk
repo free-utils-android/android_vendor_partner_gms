@@ -7,7 +7,6 @@ PRODUCT_PACKAGES += \
 	AuroraServices \
 	AuroraDroid \
 	AuroraStore \
-	TrichromeLibrary \
 	SetEdit \
 	FingerAds \
 	TraccarClient \
