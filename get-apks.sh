@@ -50,11 +50,11 @@ if [[ ! -f "$FILE"/"$FILE".apk ]]; then
 	echo "4.1.1" > "$FILE"/"$VERSION_CODE"
 fi
 
-# FILE=TrichromeLibrary
-# if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	# curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3649596" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
-	# echo "103.0.5060.70" > "$FILE"/"$VERSION_CODE"
-# fi
+FILE=TrichromeLibrary
+if [[ ! -f "$FILE"/"$FILE".apk ]]; then
+	curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3649596" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o "$FILE"/"$FILE".apk
+	echo "103.0.5060.70" > "$FILE"/"$VERSION_CODE"
+fi
 
 FILE=SetEdit
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
