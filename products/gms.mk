@@ -30,4 +30,4 @@ PRODUCT_PACKAGES += \
 	SimpleGalleryPro \
 	CoolApk \
 	LibreraReader \
-	fdroid_microg_repos.xml
+	additional_repos.xml
