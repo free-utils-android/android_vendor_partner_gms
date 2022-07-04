@@ -28,6 +28,6 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	CoolApk \
+	HeyTap \
 	LibreraReader \
 	additional_repos.xml

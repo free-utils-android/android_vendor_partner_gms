@@ -194,10 +194,10 @@ fi
 	# echo "2.19.1.303051424" > "$FILE"/"$VERSION_CODE"
 # fi
 
-FILE=CoolApk
+FILE=HeyTap
 if [[ ! -f "$FILE"/"$FILE".apk ]]; then
-	curl "https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web" -L -o "$FILE"/"$FILE".apk
-	echo "12.3.1" > "$FILE"/"$VERSION_CODE"
+	curl "https://opdwz.cn/jyQNna9" -L -o "$FILE"/"$FILE".apk
+	echo "9" > "$FILE"/"$VERSION_CODE"
 fi
 
 FILE=LibreraReader
