@@ -118,8 +118,8 @@ fi
 
 PKG=FirefoxBeta
 if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://github.com/mozilla-mobile/fenix/releases/download/v103.0.0-beta.1/fenix-103.0.0-beta.1-arm64-v8a.apk" -L -o $PKG/$PKG.apk
-	echo "103.0.0-beta.1" > $PKG/$VER_CODE
+	curl "https://github.com/mozilla-mobile/fenix/releases/download/v103.0.0-beta.2/fenix-103.0.0-beta.2-arm64-v8a.apk" -L -o $PKG/$PKG.apk
+	echo "103.0.0-beta.2" > $PKG/$VER_CODE
 fi
 
 PKG=OpenCamera
