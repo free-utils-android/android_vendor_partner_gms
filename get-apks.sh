@@ -202,14 +202,14 @@ fi
 
 PKG=CoolApk
 if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web" -L -o "$FILE"/"$FILE".apk
-	echo "12.3.1" > "$FILE"/"$VERSION_CODE"
+	curl "https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web" -L -o $PKG/$PKG.apk
+	echo "12.3.1" > $PKG/$VER_CODE
 fi
 
 PKG=HeyTap
 if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://opdwz.cn/jyQNna9" -L -o "$FILE"/"$FILE".apk
-	echo "9.4.10" > "$FILE"/"$VERSION_CODE"
+	curl "https://opdwz.cn/jyQNna9" -L -o $PKG/$PKG.apk
+	echo "9.4.10" > $PKG/$VER_CODE
 fi
 
 PKG=LibreraReader
