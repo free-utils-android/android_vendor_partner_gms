@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VER_CODE=.VER_CODE
+VER_CODE=.version_code
 
 PKG=IchnaeaNlpBackend
 if [[ ! -f $PKG/$PKG.apk ]]; then
@@ -206,8 +206,8 @@ if [[ ! -f $PKG/$PKG.apk ]]; then
 	echo "8.2.4" > $PKG/$VER_CODE
 fi
 
-PKG=LibreraReader
-if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk" -L -o $PKG/$PKG.apk
-	echo "8.5.23" > $PKG/$VER_CODE
-fi
+# PKG=LibreraReader
+# if [[ ! -f $PKG/$PKG.apk ]]; then
+	# curl "https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk" -L -o $PKG/$PKG.apk
+	# echo "8.5.23" > $PKG/$VER_CODE
+# fi

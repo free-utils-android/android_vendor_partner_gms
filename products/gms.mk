@@ -31,5 +31,4 @@ PRODUCT_PACKAGES += \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	TencentMyApp \
-	LibreraReader \
 	additional_repos.xml
