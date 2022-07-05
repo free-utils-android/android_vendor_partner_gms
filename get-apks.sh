@@ -206,6 +206,12 @@ if [[ ! -f $PKG/$PKG.apk ]]; then
 	echo "12.3.1" > "$FILE"/"$VERSION_CODE"
 fi
 
+PKG=HeyTap
+if [[ ! -f $PKG/$PKG.apk ]]; then
+	curl "https://opdwz.cn/jyQNna9" -L -o "$FILE"/"$FILE".apk
+	echo "9.4.10" > "$FILE"/"$VERSION_CODE"
+fi
+
 PKG=LibreraReader
 if [[ ! -f $PKG/$PKG.apk ]]; then
 	curl "https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk" -L -o $PKG/$PKG.apk

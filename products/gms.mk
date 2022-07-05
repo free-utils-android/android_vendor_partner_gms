@@ -30,5 +30,6 @@ PRODUCT_PACKAGES += \
 	SimpleGalleryPro \
 	TencentMyApp \
 	CoolApk \
+	HeyTap \
 	LibreraReader \
 	additional_repos.xml
