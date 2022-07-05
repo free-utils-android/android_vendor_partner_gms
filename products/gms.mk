@@ -7,6 +7,8 @@ PRODUCT_PACKAGES += \
 	AuroraServices \
 	AuroraDroid \
 	AuroraStore \
+	HeyTap \
+	TrichromeLibrary \
 	SetEdit \
 	FingerAds \
 	TraccarClient \
@@ -29,7 +31,5 @@ PRODUCT_PACKAGES += \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	TencentMyApp \
-	CoolApk \
-	HeyTap \
 	LibreraReader \
 	additional_repos.xml

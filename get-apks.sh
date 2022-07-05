@@ -50,11 +50,17 @@ if [[ ! -f $PKG/$PKG.apk ]]; then
 	echo "4.1.1" > $PKG/$VER_CODE
 fi
 
-# PKG=TrichromeLibrary
-# if [[ ! -f $PKG/$PKG.apk ]]; then
-	# curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3649596" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $PKG/$PKG.apk
-	# echo "103.0.5060.70" > $PKG/$VER_CODE
-# fi
+PKG=HeyTap
+if [[ ! -f $PKG/$PKG.apk ]]; then
+	curl "https://opdwz.cn/jyQNna9" -L -o $PKG/$PKG.apk
+	echo "9.4.10" > $PKG/$VER_CODE
+fi
+
+PKG=TrichromeLibrary
+if [[ ! -f $PKG/$PKG.apk ]]; then
+	curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=3666698" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $PKG/$PKG.apk
+	echo "103.0.5060.71" > $PKG/$VER_CODE
+fi
 
 PKG=SetEdit
 if [[ ! -f $PKG/$PKG.apk ]]; then
@@ -198,18 +204,6 @@ PKG=TencentMyApp
 if [[ ! -f $PKG/$PKG.apk ]]; then
 	cp $PKG/$PKG.apk.zip $PKG/$PKG.apk
 	echo "8.2.4" > $PKG/$VER_CODE
-fi
-
-PKG=CoolApk
-if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://dl.coolapk.com/down?pn=com.coolapk.market&id=NDU5OQ&h=46bb9d98&from=from-web" -L -o $PKG/$PKG.apk
-	echo "12.3.1" > $PKG/$VER_CODE
-fi
-
-PKG=HeyTap
-if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://opdwz.cn/jyQNna9" -L -o $PKG/$PKG.apk
-	echo "9.4.10" > $PKG/$VER_CODE
 fi
 
 PKG=LibreraReader
