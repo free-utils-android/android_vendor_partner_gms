@@ -30,5 +30,6 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	TencentMyApp \
+	Snapseed \
+	LibreraReader \
 	additional_repos.xml
