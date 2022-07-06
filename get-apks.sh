@@ -194,14 +194,14 @@ if [[ ! -f $PKG/$PKG.apk ]]; then
 	echo "6.23.12" > $PKG/$VER_CODE
 fi
 
-PKG=Snapseed
-if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $PKG/$PKG.apk
-	echo "2.19.1.303051424" > $PKG/$VER_CODE
-fi
+# PKG=Snapseed
+# if [[ ! -f $PKG/$PKG.apk ]]; then
+	# curl "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=992746" -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $PKG/$PKG.apk
+	# echo "2.19.1.303051424" > $PKG/$VER_CODE
+# fi
 
-PKG=LibreraReader
-if [[ ! -f $PKG/$PKG.apk ]]; then
-	curl "https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk" -L -o $PKG/$PKG.apk
-	echo "8.5.23" > $PKG/$VER_CODE
-fi
+# PKG=LibreraReader
+# if [[ ! -f $PKG/$PKG.apk ]]; then
+	# curl "https://github.com/foobnix/LibreraReader/releases/download/8.5.23/Librera.Fdroid-8.5.23-uni.apk" -L -o $PKG/$PKG.apk
+	# echo "8.5.23" > $PKG/$VER_CODE
+# fi

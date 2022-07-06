@@ -30,6 +30,4 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	Snapseed \
-	LibreraReader \
 	additional_repos.xml

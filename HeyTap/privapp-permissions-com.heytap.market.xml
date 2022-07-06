@@ -5,14 +5,14 @@
         <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-        <permission name="android.permission.LOADER_USAGE_STATS"/>
+        <deny-permission name="android.permission.LOADER_USAGE_STATS"/>
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
         <permission name="android.permission.MOVE_PACKAGE"/>
-        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
-        <permission name="android.permission.READ_LOGS"/>
-        <permission name="android.permission.READ_RUNTIME_PROFILES"/>
-        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
-        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <deny-permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <deny-permission name="android.permission.READ_LOGS"/>
+        <deny-permission name="android.permission.READ_RUNTIME_PROFILES"/>
+        <deny-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <deny-permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
         <permission name="com.android.permission.USE_INSTALLER_V2"/>
     </privapp-permissions>
 </permissions>
