@@ -401,14 +401,14 @@ fi
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="103.0.0-beta.5"
+VERSION="104.0b1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v103.0.0-beta.5/fenix-103.0.0-beta.5-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v104.0b1/fenix-104.0b1-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
