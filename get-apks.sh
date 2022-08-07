@@ -199,7 +199,7 @@ CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202206/17/a411e032b465b95c67f42d738d75e1ac.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202207/22/7f9ee1d695f764e0415ea2a170e013f6.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -210,13 +210,13 @@ fi
 PACKAGE=TrichromeLibrary
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="103.0.5060.129"
+VERSION="104.0.5112.69"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a + arm-v7a)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-103-0-5060-129-release/trichrome-library-103-0-5060-129-4-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-104-0-5112-69-release/trichrome-library-104-0-5112-69-3-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -366,13 +366,13 @@ fi
 PACKAGE=Bitwarden
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2022.6.2"
+VERSION="2022.8.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2022.6.2/com.x8bit.bitwarden.apk"
+	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2022.8.0/com.x8bit.bitwarden.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -401,14 +401,14 @@ fi
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="104.0b1"
+VERSION="104.0b4"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v104.0b1/fenix-104.0b1-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v104.0b4/fenix-104.0b4-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -503,22 +503,7 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 fi
 
 
-#:
-PACKAGE=RotationControl
-
-FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.0"
-TITLE="$PACKAGE-version:$VERSION"
-CHECK_FILE_FUNC_RESULT=false
-FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/crapemyrtle/rotation-control/rotation-control-1-0-release/rotation-control-1-0-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+#PACKAGE=RotationControl
 
 
 #:
@@ -559,13 +544,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.18.0"
+VERSION="1.18.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v1.18.0/com.github.cvzi.screenshottile_69.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v1.18.2/com.github.cvzi.screenshottile_71.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -576,13 +561,13 @@ fi
 PACKAGE=SimpleGalleryPro
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="6.23.13"
+VERSION="6.24.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/SimpleMobileTools/Simple-Gallery/releases/download/6.23.13/gallery-372-foss-release.apk"
+	GITHUB_RELEASE="https://github.com/SimpleMobileTools/Simple-Gallery/releases/download/6.24.1/gallery-374-foss-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
