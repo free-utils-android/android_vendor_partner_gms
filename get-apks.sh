@@ -210,13 +210,13 @@ fi
 PACKAGE=TrichromeLibrary
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="104.0.5112.69"
+VERSION="104.0.5112.97"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a + arm-v7a)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-104-0-5112-69-release/trichrome-library-104-0-5112-69-3-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-104-0-5112-97-release/trichrome-library-104-0-5112-97-4-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -313,13 +313,13 @@ fi
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.2.2-ose"
+VERSION="4.2.3.1-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.2-ose/davx5-ose-4.2.2-standard-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.3.1-ose/davx5-ose-4.2.3.1-standard-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -330,13 +330,13 @@ fi
 PACKAGE=NextCloud
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.20.3"
+VERSION="3.21.0"
 TITLE="$PACKAGE-version:$VERSION (nodpi) (Android 6.0+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/nextcloud/nextcloud/nextcloud-3-20-3-release/nextcloud-3-20-3-2-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/nextcloud/nextcloud/nextcloud-3-21-0-release/nextcloud-3-21-0-2-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -348,13 +348,13 @@ fi
 PACKAGE=VLC
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.5.0"
+VERSION="3.5.1"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a) (Android 4.2+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-0-release/vlc-for-android-3-5-0-3-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-1-release/vlc-for-android-3-5-1-3-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -401,14 +401,14 @@ fi
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="104.0b4"
+VERSION="105.0b1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v104.0b4/fenix-104.0b4-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v105.0b1/fenix-105.0b1-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -490,13 +490,13 @@ fi
 PACKAGE=Lawnchair
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="12.1.0 Alpha 3"
+VERSION="12.1.0 Alpha 4"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/LawnchairLauncher/lawnchair/releases/download/v12.1.0-alpha.3/Lawnchair.12.1.0.Alpha.3.apk"
+	GITHUB_RELEASE="https://github.com/LawnchairLauncher/lawnchair/releases/download/v12.1.0-alpha.4/Lawnchair.12.1.0.Alpha.4.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -544,13 +544,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.18.2"
+VERSION="2.0.0-beta1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v1.18.2/com.github.cvzi.screenshottile_71.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.0.0-beta1/com.github.cvzi.screenshottile_76.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
