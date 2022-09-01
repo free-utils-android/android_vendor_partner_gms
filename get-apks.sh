@@ -330,13 +330,13 @@ fi
 PACKAGE=NextCloud
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.21.0"
+VERSION="3.21.2"
 TITLE="$PACKAGE-version:$VERSION (nodpi) (Android 6.0+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/nextcloud/nextcloud/nextcloud-3-21-0-release/nextcloud-3-21-0-2-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/nextcloud/nextcloud/nextcloud-3-21-2-release/nextcloud-3-21-2-2-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
