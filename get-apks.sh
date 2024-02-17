@@ -90,7 +90,7 @@ fi
 PACKAGE=UnifiedNlp
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.6.8'"
+VERSION="1.6.8"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
@@ -183,7 +183,7 @@ FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	GITLAB_RELEASE="https://auroraoss.com/AuroraStore/Stable/AuroraStore_4.4.1.apk"
-	curl $GITLAB_RELEASE -o $FILE
+	curl $GITLAB_RELEASE -A "Mozilla/5.0 ( ; ; rv: ) / / " -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
