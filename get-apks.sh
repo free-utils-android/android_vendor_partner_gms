@@ -245,13 +245,14 @@ fi
 PACKAGE=FingerAds
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.3.706"
+VERSION="3.4.5"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	cp $FILE.zip $FILE
+	GITHUB_RELEASE="https://github.com/jdlingyu/onefinger/releases/download/v3.4.7.0/finger-ads-v3.4.5.apk"
+	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:copied"
 fi
