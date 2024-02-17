@@ -13,7 +13,7 @@ PRODUCT_PACKAGES += \
 	FingerAds \
 	TraccarClient \
 	ZeroTierOne \
-	WireGuard \
+	AnyConnect \
 	Davx5 \
 	NextCloud \
 	VLC \
@@ -24,9 +24,8 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
-	Lawnchair \
 	RotationControl \
-	QKSMS \
+	FossifySMS \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \

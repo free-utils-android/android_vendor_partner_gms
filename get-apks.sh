@@ -124,13 +124,13 @@ fi
 PACKAGE=FDroid
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.15.2"
+VERSION="1.19.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1015052.apk"
+	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019050.apk"
 	curl $FDROID_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -176,13 +176,13 @@ fi
 PACKAGE=AuroraStore
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.1.1"
+VERSION="4.4.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITLAB_RELEASE="https://gitlab.com/AuroraOSS/AuroraStore/uploads/bbc1bd5a77ab2b40bbf288ccbef8d1f0/AuroraStore_4.1.1.apk"
+	GITLAB_RELEASE="https://auroraoss.com/AuroraStore/Stable/AuroraStore_4.4.1.apk"
 	curl $GITLAB_RELEASE -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -193,13 +193,13 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="9.6.1"
+VERSION="11.8.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202207/22/7f9ee1d695f764e0415ea2a170e013f6.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202402/05/08310efe74566d5eec7c2dec219804a7.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -210,13 +210,13 @@ fi
 PACKAGE=TrichromeLibrary
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="104.0.5112.97"
+VERSION="122.0.6261.43"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a + arm-v7a)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-104-0-5112-97-release/trichrome-library-104-0-5112-97-4-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-122-0-6261-43-release/trichrome-library-122-0-6261-43-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -228,13 +228,13 @@ fi
 PACKAGE=SetEdit
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2.2"
+VERSION="2.3"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/MuntashirAkon/SetEdit/releases/download/v2.2/SetEdit_v2.2.apk"
+	GITHUB_RELEASE="https://github.com/MuntashirAkon/SetEdit/releases/download/v2.3/SetEdit_v2.3.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -262,13 +262,13 @@ fi
 PACKAGE=TraccarClient
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="6.17"
+VERSION="7.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v6.17/app-regular-release.apk"
+	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v7.2/app-regular-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -279,7 +279,7 @@ fi
 PACKAGE=ZeroTierOne
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.8.6-1"
+VERSION="1.12.0-3"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
@@ -292,17 +292,20 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 fi
 
 
+#PACKAGE=WireGuard
+
+
 #:
-PACKAGE=WireGuard
+PACKAGE=AnyConnect
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.0.20220516"
+VERSION="5.0.05042"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/wireguard-development-team/wireguard/wireguard-1-0-20220516-release/wireguard-1-0-20220516-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/cisco-systems-inc/anyconnect/anyconnect-5-0-05042-release/cisco-secure-client-anyconnect-5-0-05042-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -314,13 +317,13 @@ fi
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.2.3.1-ose"
+VERSION="4.3.13-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.2.3.1-ose/davx5-ose-4.2.3.1-standard-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.13-ose/davx5-ose-4.3.13-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -331,15 +334,14 @@ fi
 PACKAGE=NextCloud
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.21.2"
-TITLE="$PACKAGE-version:$VERSION (nodpi) (Android 6.0+)"
+VERSION="3.27.0"
+TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/nextcloud/nextcloud/nextcloud-3-21-2-release/nextcloud-3-21-2-2-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
+	GITHUB_RELEASE="https://github.com/nextcloud/android/releases/download/stable-3.27.0/nextcloud-30270090.apk"
+	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
@@ -349,13 +351,13 @@ fi
 PACKAGE=VLC
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.5.1"
+VERSION="3.5.4"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a) (Android 4.2+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-1-release/vlc-for-android-3-5-1-3-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-4-release/vlc-for-android-3-5-4-2-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -367,13 +369,13 @@ fi
 PACKAGE=Bitwarden
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2022.8.0"
+VERSION="2024.2.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2022.8.0/com.x8bit.bitwarden.apk"
+	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2024.2.0/com.x8bit.bitwarden.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -384,13 +386,13 @@ fi
 PACKAGE=GoogleAuthenticator
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="5.20R4"
+VERSION="6.0"
 TITLE="$PACKAGE-version:$VERSION (Android 4.4+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/authenticator/authenticator-5-20r4-release/google-authenticator-5-20r4-2-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/google-inc/authenticator/authenticator-6-0-release/google-authenticator-6-0-3-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -402,14 +404,14 @@ fi
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="105.0b1"
+VERSION="123.0b9"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/fenix/releases/download/v105.0b1/fenix-105.0b1-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/firefox-android/releases/download/fenix-v123.0b9/fenix-123.0b9-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -420,13 +422,13 @@ fi
 PACKAGE=OpenCamera
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.50.1"
+VERSION="1.52"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	SOURCEFORGE_APK=""https://sourceforge.net/projects/opencamera/PACKAGEs/v_1_50_1/OpenCamera.apk/download""
+	SOURCEFORGE_APK=""https://sourceforge.net/projects/opencamera/files/v_1_52/OpenCamera.apk/download""
 	curl $SOURCEFORGE_APK -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -437,13 +439,13 @@ fi
 PACKAGE=GhostCommander
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.60.7"
+VERSION="1.62.3"
 TITLE="$PACKAGE-version:$VERSION (Android 4.4+)"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/ghost-commander-file-manager/ghost-commander-file-manager-1-60-7-release/ghost-commander-file-manager-1-60-7-android-apk-download/"
+	APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/ghost-commander-file-manager/ghost-commander-file-manager-1-62-3-release/ghost-commander-file-manager-1-62-3-android-apk-download/"
 	FUNC_APKMIRROR_LINK
 	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
@@ -487,37 +489,38 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 fi
 
 
-#:
-PACKAGE=Lawnchair
+#PACKAGE=Lawnchair
+
+
+#：
+PACKAGE=RotationControl
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="12.1.0 Alpha 4"
+VERSION="1.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/LawnchairLauncher/lawnchair/releases/download/v12.1.0-alpha.4/Lawnchair.12.1.0.Alpha.4.apk"
-	curl $GITHUB_RELEASE -L -o $FILE
+	APK_PAGE="https://www.apkmirror.com/apk/crapemyrtle/rotation-control/rotation-control-1-1-release/rotation-control-1-1-android-apk-download/"
+	FUNC_APKMIRROR_LINK
+	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
 
 
-#PACKAGE=RotationControl
-
-
 #:
-PACKAGE=QKSMS
+PACKAGE=FossifySMS
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.9.4"
+VERSION="1.0.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/moezbhatti/qksms/releases/download/v3.9.4/QKSMS-v3.9.4.apk"
+	GITHUB_RELEASE="https://github.com/FossifyOrg/Messages/releases/download/1.0.1/messages-2-foss-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -528,13 +531,13 @@ fi
 PACKAGE=OsmAndPlus
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.2.6"
+VERSION="4.6.12"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	FDROID_APK="https://f-droid.org/repo/net.osmand.plus_4206.apk"
+	FDROID_APK="https://f-droid.org/repo/net.osmand.plus_461203.apk"
 	curl $FDROID_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -545,13 +548,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2.0.0-beta1"
+VERSION="2.8.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.0.0-beta1/com.github.cvzi.screenshottile_76.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.1/com.github.cvzi.screenshottile_114.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -562,13 +565,13 @@ fi
 PACKAGE=SimpleGalleryPro
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="6.24.1"
+VERSION="6.28.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/SimpleMobileTools/Simple-Gallery/releases/download/6.24.1/gallery-374-foss-release.apk"
+	GITHUB_RELEASE="https://github.com/SimpleMobileTools/Simple-Gallery/releases/download/6.28.1/gallery-396-foss-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
