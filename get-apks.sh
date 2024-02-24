@@ -15,31 +15,33 @@ if [[ ! -x "$(command -v xidel)" ]]; then
 	return 1
 fi
 
-#input parameter 1:
+USER_AGENT="Mozilla/5.0 ( ; ; rv: ) / / "
+
+# input parameter 1:
 APK_PAGE=""
 # function output result:
 APKMIRROR_LINK_FUNC_RESULT=""
 # get download link from package page
-FUNC_APKMIRROR_LINK(){
-	download_page_sub=$(curl $APK_PAGE -A "Mozilla/5.0 ( ; ; rv: ) / / " | xidel - --xpath '//*[@id="file"]//a[@rel="nofollow"]/@href')
-	sleep 2
+function FUNC_APKMIRROR_LINK(){
+	download_page_sub=$(curl $APK_PAGE -A "$USER_AGENT" | xidel - --xpath '//*[@id="file"]//a[@rel="nofollow"]/@href')
+	sleep 10
 	download_page="https://www.apkmirror.com"$download_page_sub
-	apk_link_sub=$(curl $download_page -A "Mozilla/5.0 ( ; ; rv: ) / / " | xidel - --xpath '//*[@id="content"]//a[@rel="nofollow"]/@href')
-	sleep 2
+	apk_link_sub=$(curl $download_page -A "$USER_AGENT" | xidel - --xpath '//*[@id="content"]//a[@rel="nofollow"]/@href')
+	sleep 10
 	APKMIRROR_LINK_FUNC_RESULT="https://www.apkmirror.com"$apk_link_sub
 }
 
 
-#input parameter 1:
+# input parameter 1:
 FILE=""
-#input parameter 2:
+# input parameter 2:
 VERSION=""
-#input parameter 3:
+# input parameter 3:
 TITLE=""
 # function output result:
 CHECK_FILE_FUNC_RESULT=false
 # check apk file exist or not
-FUNC_CHECK_FILE(){
+function FUNC_CHECK_FILE(){
 	if [[ -f $FILE ]]; then
 		file_version=$(aapt dump badging $FILE | grep "versionName" | sed -e "s/.*versionName='//" -e "s/' .*//")
 
@@ -49,6 +51,26 @@ FUNC_CHECK_FILE(){
 		fi
 	fi
 }
+
+
+# input parameter 1:
+#CHECK_FILE_FUNC_RESULT=false
+# input parameter 2:
+#APK_PAGE=""
+# input parameter 3:
+#FILE=""
+# function output result:
+# null,file_package
+# download package
+function FUNC_APKMIRROR_DOWNLOAD(){
+	if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+		FUNC_APKMIRROR_LINK
+		curl $APKMIRROR_LINK_FUNC_RESULT -A "$USER_AGENT" -L -o $FILE
+		sleep 30
+		echo "$TITLE:got"
+	fi
+}
+
 
 
 VERSION_CODE=.version_code
@@ -211,20 +233,14 @@ fi
 #com.google.android.trichromelibrary:
 PACKAGE=TrichromeLibrary
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="122.0.6261.43"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a + arm-v7a)"
+APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-122-0-6261-43-release/trichrome-library-122-0-6261-43-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-122-0-6261-43-release/trichrome-library-122-0-6261-43-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
@@ -301,20 +317,14 @@ fi
 #:
 PACKAGE=AnyConnect
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="5.0.05042"
 TITLE="$PACKAGE-version:$VERSION"
+APK_PAGE="https://www.apkmirror.com/apk/cisco-systems-inc/anyconnect/anyconnect-5-0-05042-release/cisco-secure-client-anyconnect-5-0-05042-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/cisco-systems-inc/anyconnect/anyconnect-5-0-05042-release/cisco-secure-client-anyconnect-5-0-05042-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
@@ -354,20 +364,14 @@ fi
 #:
 PACKAGE=VLC
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="3.5.4"
 TITLE="$PACKAGE-version:$VERSION (arm64-v8a) (Android 4.2+)"
+APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-4-release/vlc-for-android-3-5-4-2-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/videolabs/vlc/vlc-3-5-4-release/vlc-for-android-3-5-4-2-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
@@ -390,20 +394,14 @@ fi
 #:
 PACKAGE=GoogleAuthenticator
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="6.0"
 TITLE="$PACKAGE-version:$VERSION (Android 4.4+)"
+APK_PAGE="https://www.apkmirror.com/apk/google-inc/authenticator/authenticator-6-0-release/google-authenticator-6-0-3-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/google-inc/authenticator/authenticator-6-0-release/google-authenticator-6-0-3-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
@@ -444,58 +442,40 @@ fi
 #:
 PACKAGE=GhostCommander
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.62.3"
 TITLE="$PACKAGE-version:$VERSION (Android 4.4+)"
+APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/ghost-commander-file-manager/ghost-commander-file-manager-1-62-3-release/ghost-commander-file-manager-1-62-3-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/ghost-commander-file-manager/ghost-commander-file-manager-1-62-3-release/ghost-commander-file-manager-1-62-3-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
 PACKAGE=GhostCommanderSMB
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.02"
 TITLE="$PACKAGE-version: (new) $VERSION"
+APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/smb-plugin-for-ghost-commander-new/smb-plugin-for-ghost-commander-new-1-02-release/smb-plugin-for-ghost-commander-new-1-02-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/smb-plugin-for-ghost-commander-new/smb-plugin-for-ghost-commander-new-1-02-release/smb-plugin-for-ghost-commander-new-1-02-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
 PACKAGE=GhostCommanderWebDAV
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.0.4"
 TITLE="$PACKAGE-version:$VERSION (Android 4.4+)"
+APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/webdav-for-ghost-commander/webdav-for-ghost-commander-1-0-4-release/webdav-for-ghost-commander-1-0-4-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/ghost-squared/webdav-for-ghost-commander/webdav-for-ghost-commander-1-0-4-release/webdav-for-ghost-commander-1-0-4-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #PACKAGE=Lawnchair
@@ -504,20 +484,14 @@ fi
 #：
 PACKAGE=RotationControl
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.1"
 TITLE="$PACKAGE-version:$VERSION"
+APK_PAGE="https://www.apkmirror.com/apk/crapemyrtle/rotation-control/rotation-control-1-1-release/rotation-control-1-1-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	APK_PAGE="https://www.apkmirror.com/apk/crapemyrtle/rotation-control/rotation-control-1-1-release/rotation-control-1-1-android-apk-download/"
-	FUNC_APKMIRROR_LINK
-	curl $APKMIRROR_LINK_FUNC_RESULT -A "Mozilla/5.0 ( ; ; rv: ) / / " -L -o $FILE
-	sleep 2
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
