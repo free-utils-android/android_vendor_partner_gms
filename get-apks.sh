@@ -560,3 +560,20 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
+
+
+#:
+PACKAGE=Xunfei
+
+FILE=$PACKAGE/$PACKAGE.apk
+VERSION="13.0.7"
+TITLE="$PACKAGE-version:$VERSION"
+CHECK_FILE_FUNC_RESULT=false
+FUNC_CHECK_FILE
+
+if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+	VENDOR_RELEASE="https://download.voicecloud.cn/100IME/01010026/iFlyIME_v13.0.7.15091.apk"
+	curl $VENDOR_RELEASE -o $FILE
+	echo $VERSION > $PACKAGE/$VERSION_CODE
+	echo "$TITLE:got"
+fi
