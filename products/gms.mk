@@ -4,11 +4,7 @@ PRODUCT_PACKAGES += \
 	UnifiedNlp \
 	FDroidPrivilegedExtension \
 	FDroid \
-	AuroraServices \
-	AuroraDroid \
-	AuroraStore \
 	HeyTap \
-	TrichromeLibrary \
 	SetEdit \
 	FingerAds \
 	TraccarClient \
