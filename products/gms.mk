@@ -25,4 +25,5 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
+	Xunfei \
 	additional_repos.xml
