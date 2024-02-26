@@ -8,21 +8,13 @@ PRODUCT_PACKAGES += \
 	SetEdit \
 	FingerAds \
 	TraccarClient \
-	ZeroTierOne \
-	AnyConnect \
 	Davx5 \
-	NextCloud \
-	VLC \
-	Bitwarden \
-	GoogleAuthenticator \
-	FirefoxBeta \
 	OpenCamera \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
 	RotationControl \
 	FossifySMS \
-	OsmAndPlus \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	Xunfei \
