@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ ! -x "$(command -v aapt)" ]]; then
-    echo "aapt could not be found"
+if [[ ! -x "$(command -v aapt2)" ]]; then
+    echo "aapt2 could not be found"
 	echo "try: export PATH=$PATH:/mnt/bu2/ubuntu/android/lineage/out/soong/host/linux-x86/bin"
 	echo "Ctrl+C to stop or wait 120s"
     sleep 120
@@ -43,7 +43,7 @@ CHECK_FILE_FUNC_RESULT=false
 # check apk file exist or not
 function FUNC_CHECK_FILE(){
 	if [[ -f $FILE ]]; then
-		file_version=$(aapt dump badging $FILE | grep "versionName" | sed -e "s/.*versionName='//" -e "s/' .*//")
+		file_version=$(aapt2 dump badging $FILE | grep "versionName" | sed -e "s/.*versionName='//" -e "s/' .*//")
 
 		if [[ "$file_version" == "$VERSION" ]]; then
 			CHECK_FILE_FUNC_RESULT=true
