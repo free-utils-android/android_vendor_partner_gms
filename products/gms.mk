@@ -5,17 +5,17 @@ PRODUCT_PACKAGES += \
 	FDroidPrivilegedExtension \
 	FDroid \
 	HeyTap \
-	SetEdit \
-	FingerAds \
-	TraccarClient \
 	Davx5 \
-	OpenCamera \
+	FingerAds \
+	FossifySMS \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
+	NextCloud \
+	OpenCamera \
 	RotationControl \
-	FossifySMS \
+	SetEdit \
 	ScreenshotTile \
 	SimpleGalleryPro \
-	Xunfei \
+	TraccarClient \
 	additional_repos.xml
