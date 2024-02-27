@@ -7,10 +7,12 @@ PRODUCT_PACKAGES += \
 	HeyTap \
 	Davx5 \
 	FingerAds \
+	FirefoxBeta \
 	FossifySMS \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
+	GoogleAuthenticator \
 	NextCloud \
 	OpenCamera \
 	RotationControl \
