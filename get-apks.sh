@@ -73,66 +73,81 @@ function FUNC_APKMIRROR_DOWNLOAD(){
 
 
 
+
 VERSION_CODE=.version_code
+
+
+
+# input parameter 1:
+#CHECK_FILE_FUNC_RESULT=false
+# input parameter 2:
+#GITHUB_RELEASE=""
+# input parameter 3:
+#FILE=""
+# input parameter 4:
+#VERSION
+# input parameter 5:
+#PACKAGE
+# input constant 1:
+#VERSION_CODE
+# function output result:
+# null,file_package,file_version
+# download package
+function FUNC_GITHUB_DOWNLOAD(){
+	if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+		curl $GITHUB_RELEASE -A "$USER_AGENT" -L -o $FILE
+		echo $VERSION > $PACKAGE/$VERSION_CODE
+		echo "$TITLE:got"
+	fi
+}
 
 
 #:
 PACKAGE=IchnaeaNlpBackend
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.5.0"
 TITLE="$PACKAGE-version:$VERSION"
+GITHUB_RELEASE="https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/microg/IchnaeaNlpBackend/releases/download/v1.5.0/IchnaeaNlpBackend.apk"
-	curl $GITHUB_RELEASE -L -o $FILE
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_GITHUB_DOWNLOAD
 
 
 #:
 PACKAGE=NominatimGeocoderBackend
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.2.1"
 TITLE="$PACKAGE-version:$VERSION"
+GITHUB_RELEASE="https://github.com/microg/NominatimGeocoderBackend/releases/download/v1.2.1/NominatimGeocoderBackend.apk"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/microg/NominatimGeocoderBackend/releases/download/v1.2.1/NominatimGeocoderBackend.apk"
-	curl $GITHUB_RELEASE -L -o $FILE
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_GITHUB_DOWNLOAD
 
 
 #:
 PACKAGE=UnifiedNlp
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="1.6.8"
 TITLE="$PACKAGE-version:$VERSION"
+GITHUB_RELEASE="https://github.com/microg/UnifiedNlp/releases/download/v1.6.8/UnifiedNlp.apk"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-
-if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/microg/UnifiedNlp/releases/download/v1.6.8/UnifiedNlp.apk"
-	curl $GITHUB_RELEASE -L -o $FILE
-	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
-fi
+FUNC_GITHUB_DOWNLOAD
 
 
 #:
 PACKAGE=FDroidPrivilegedExtension
 
-FILE=$PACKAGE/$PACKAGE.apk
 VERSION="0.2.13"
 TITLE="$PACKAGE-version:$VERSION"
+
+FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
