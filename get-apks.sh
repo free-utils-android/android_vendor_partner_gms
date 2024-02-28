@@ -15,7 +15,7 @@ if [[ ! -x "$(command -v xidel)" ]]; then
 	return 1
 fi
 
-USER_AGENT="Mozilla/5.0 ( ; ; rv: ) / / "
+USER_AGENT="Mozilla/5.0 (  ; ; ; rv:) / /"
 
 # input parameter 1:
 APK_PAGE=""
