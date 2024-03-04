@@ -2,7 +2,7 @@
 
 if [[ ! -x "$(command -v aapt2)" ]]; then
     echo "aapt2 could not be found"
-	echo "try: export PATH=$PATH:/mnt/bu2/ubuntu/android/lineage/out/soong/host/linux-x86/bin"
+	echo "try: export PATH=$PATH:/mnt/bu2/ubuntu/android/lineage/out/host/linux-x86/bin/"
 	echo "Ctrl+C to stop or wait 120s"
     sleep 120
 	return 1

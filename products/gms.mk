@@ -19,7 +19,6 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
-	AnyConnect \
 	ZeroTierOne \
 	VLC \
 	Bitwarden \
