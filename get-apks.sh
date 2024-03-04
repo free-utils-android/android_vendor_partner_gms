@@ -187,7 +187,7 @@ FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	GITLAB_RELEASE="https://gitlab.com/AuroraOSS/AuroraServices/uploads/c22e95975571e9db143567690777a56e/AuroraServices_v1.1.1.apk"
-	curl $GITLAB_RELEASE -o $FILE
+	#curl $GITLAB_RELEASE -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
@@ -205,7 +205,7 @@ FUNC_CHECK_FILE
 PACKAGE=AuroraDroid
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	GITLAB_RELEASE="https://gitlab.com/AuroraOSS/auroradroid/uploads/d925b3b4c054df7535b93895c199159f/AuroraDroid_1.0.8.apk"
-	curl $GITLAB_RELEASE -o $FILE
+	#curl $GITLAB_RELEASE -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
@@ -222,7 +222,7 @@ FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	GITLAB_RELEASE="https://auroraoss.com/AuroraStore/Stable/AuroraStore_4.4.1.apk"
-	curl $GITLAB_RELEASE -A "Mozilla/5.0 ( ; ; rv: ) / / " -o $FILE
+	#curl $GITLAB_RELEASE -A "Mozilla/5.0 ( ; ; rv: ) / / " -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
@@ -255,7 +255,7 @@ APK_PAGE="https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-l
 FILE=$PACKAGE/$PACKAGE.apk
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-FUNC_APKMIRROR_DOWNLOAD
+#FUNC_APKMIRROR_DOWNLOAD
 
 
 #:
