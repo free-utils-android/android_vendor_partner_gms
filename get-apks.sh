@@ -594,6 +594,23 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 fi
 
 
+#:
+PACKAGE=BaiduInput
+
+FILE=$PACKAGE/$PACKAGE.apk
+VERSION="12.2.3.7"
+TITLE="$PACKAGE-version:$VERSION"
+CHECK_FILE_FUNC_RESULT=false
+FUNC_CHECK_FILE
+
+if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+	VENDOR_RELEASE="https://downpack.baidu.com/baiduinput_AndroidPhone_1000e.apk"
+	curl $VENDOR_RELEASE -L -o $FILE
+	echo $VERSION > $PACKAGE/$VERSION_CODE
+	echo "$TITLE:got"
+fi
+
+
 #  com.azure.authenticator:
 PACKAGE=MsAuthenticator
 
