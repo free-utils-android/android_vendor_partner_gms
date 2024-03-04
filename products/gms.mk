@@ -19,5 +19,9 @@ PRODUCT_PACKAGES += \
 	GhostCommanderWebDAV \
 	ZeroTierOne \
 	Bitwarden \
+	GoogleAuthenticator \
+	MsAuthenticator \
 	OsmAndPlus \
+	Talkback \
+	SpeechServicesByGoogle \
 	additional_repos.xml

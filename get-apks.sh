@@ -346,13 +346,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.3.13-ose"
+VERSION="4.3.14-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.13-ose/davx5-ose-4.3.13-ose-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.14-ose/davx5-ose-4.3.14-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -363,13 +363,13 @@ fi
 PACKAGE=NextCloud
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="3.27.0"
+VERSION="3.28.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/nextcloud/android/releases/download/stable-3.27.0/nextcloud-30270090.apk"
+	GITHUB_RELEASE="https://github.com/nextcloud/android/releases/download/stable-3.28.0/nextcloud-30280090.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -423,14 +423,14 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="124.0b4"
+VERSION="124.0b7"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/firefox-android/releases/download/fenix-v124.0b4/fenix-124.0b4-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/firefox-android/releases/download/fenix-v124.0b7/fenix-124.0b7-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -592,3 +592,43 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
+
+
+#  com.azure.authenticator:
+PACKAGE=MsAuthenticator
+
+VERSION="6.2402.1098"
+TITLE="$PACKAGE-version:(noarch):$VERSION (Android 8+)"
+APK_PAGE="https://www.apkmirror.com/apk/microsoft-corporation/microsoft-authenticator/microsoft-authenticator-6-2402-1098-release/microsoft-authenticator-6-2402-1098-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
+CHECK_FILE_FUNC_RESULT=false
+FUNC_CHECK_FILE
+FUNC_APKMIRROR_DOWNLOAD
+
+
+#  com.google.android.marvin.talkback:
+PACKAGE=Talkback
+
+VERSION="14.1.0.595874199"
+TITLE="$PACKAGE-version:(noarch):$VERSION (Android 8+)"
+APK_PAGE="https://www.apkmirror.com/apk/google-inc/android-accessibility-suite/android-accessibility-suite-14-1-0-595874199-release/android-accessibility-suite-14-1-0-595874199-2-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
+CHECK_FILE_FUNC_RESULT=false
+FUNC_CHECK_FILE
+FUNC_APKMIRROR_DOWNLOAD
+
+
+# com.google.android.tts :
+PACKAGE=SpeechServicesByGoogle
+
+VERSION="googletts.google-speech-apk_20240205.02_p0.604470300"
+TITLE="$PACKAGE-version:(arm64-v8a):$VERSION (Android 8+)"
+APK_PAGE="https://www.apkmirror.com/apk/google-inc/google-text-to-speech-engine/google-text-to-speech-engine-googletts-google-speech-apk_20240205-02_p0-604470300-release/speech-recognition-synthesis-googletts-google-speech-apk_20240205-02_p0-604470300-android-apk-download/"
+
+FILE=$PACKAGE/$PACKAGE.apk
+CHECK_FILE_FUNC_RESULT=false
+FUNC_CHECK_FILE
+FUNC_APKMIRROR_DOWNLOAD
+
