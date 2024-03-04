@@ -6,17 +6,23 @@ PRODUCT_PACKAGES += \
 	FDroid \
 	HeyTap \
 	Davx5 \
+	NextCloud \
 	FingerAds \
 	FirefoxBeta \
 	FossifySMS \
-	GhostCommander \
-	GhostCommanderSMB \
-	GhostCommanderWebDAV \
-	NextCloud \
 	OpenCamera \
 	RotationControl \
 	SetEdit \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	TraccarClient \
+	GhostCommander \
+	GhostCommanderSMB \
+	GhostCommanderWebDAV \
+	AnyConnect \
+	ZeroTierOne \
+	VLC \
+	Bitwarden \
+	OsmAndPlus \
+	Xunfei \
 	additional_repos.xml
