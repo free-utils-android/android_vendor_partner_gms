@@ -11,8 +11,6 @@ PRODUCT_PACKAGES += \
 	FirefoxBeta \
 	FossifySMS \
 	OpenCamera \
-	RotationControl \
-	SetEdit \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	TraccarClient \
@@ -22,5 +20,4 @@ PRODUCT_PACKAGES += \
 	ZeroTierOne \
 	Bitwarden \
 	OsmAndPlus \
-	Xunfei \
 	additional_repos.xml
