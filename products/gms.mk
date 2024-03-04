@@ -24,4 +24,5 @@ PRODUCT_PACKAGES += \
 	OsmAndPlus \
 	Talkback \
 	SpeechServicesByGoogle \
+	BaiduInput \
 	additional_repos.xml
