@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
 	ZeroTierOne \
-	VLC \
 	Bitwarden \
 	OsmAndPlus \
 	Xunfei \
