@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
+	Localsend \
 	ZeroTierOne \
 	Bitwarden \
 	GoogleAuthenticator \
