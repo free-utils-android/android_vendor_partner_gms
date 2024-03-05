@@ -22,7 +22,5 @@ PRODUCT_PACKAGES += \
 	GoogleAuthenticator \
 	MsAuthenticator \
 	OsmAndPlus \
-	Talkback \
 	SpeechServicesByGoogle \
-	BaiduInput \
 	additional_repos.xml
