@@ -624,17 +624,21 @@ FUNC_CHECK_FILE
 FUNC_APKMIRROR_DOWNLOAD
 
 
-#  com.google.android.marvin.talkback:
-PACKAGE=Talkback
-
-VERSION="14.1.0.595874199"
-TITLE="$PACKAGE-version:(noarch):$VERSION (Android 8+)"
-APK_PAGE="https://www.apkmirror.com/apk/google-inc/android-accessibility-suite/android-accessibility-suite-14-1-0-595874199-release/android-accessibility-suite-14-1-0-595874199-2-android-apk-download/"
+#:
+PACKAGE=Localsend
 
 FILE=$PACKAGE/$PACKAGE.apk
+VERSION="1.14.0"
+TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
-FUNC_APKMIRROR_DOWNLOAD
+
+if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+	GITHUB_RELEASE="https://github.com/localsend/localsend/releases/download/v1.14.0/LocalSend-1.14.0.apk"
+	curl $GITHUB_RELEASE -L -o $FILE
+	echo $VERSION > $PACKAGE/$VERSION_CODE
+	echo "$TITLE:got"
+fi
 
 
 # com.google.android.tts :
