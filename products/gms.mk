@@ -8,7 +8,6 @@ PRODUCT_PACKAGES += \
 	Davx5 \
 	NextCloud \
 	FingerAds \
-	FirefoxBeta \
 	FossifySMS \
 	OpenCamera \
 	ScreenshotTile \
@@ -17,11 +16,7 @@ PRODUCT_PACKAGES += \
 	GhostCommander \
 	GhostCommanderSMB \
 	GhostCommanderWebDAV \
-	LocalSend \
-	ZeroTierOne \
-	Bitwarden \
 	GoogleAuthenticator \
 	MsAuthenticator \
-	OsmAndPlus \
 	SpeechServicesByGoogle \
 	additional_repos.xml
