@@ -18,5 +18,4 @@ PRODUCT_PACKAGES += \
 	GhostCommanderWebDAV \
 	GoogleAuthenticator \
 	MsAuthenticator \
-	SpeechServicesByGoogle \
 	additional_repos.xml
