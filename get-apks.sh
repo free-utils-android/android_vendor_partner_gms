@@ -163,13 +163,13 @@ fi
 PACKAGE=FDroid
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.19.0"
+VERSION="1.19.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019050.apk"
+	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019051.apk"
 	curl $FDROID_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -215,13 +215,13 @@ fi
 PACKAGE=AuroraStore
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.4.1"
+VERSION="4.4.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITLAB_RELEASE="https://auroraoss.com/AuroraStore/Stable/AuroraStore_4.4.1.apk"
+	GITLAB_RELEASE="https://auroraoss.com/AuroraStore/Stable/AuroraStore-4.4.2.apk"
 	#curl $GITLAB_RELEASE -A "Mozilla/5.0 ( ; ; rv: ) / / " -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -639,17 +639,4 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
-
-
-# com.google.android.tts :
-PACKAGE=SpeechServicesByGoogle
-
-VERSION="googletts.google-speech-apk_20240205.02_p0.604470300"
-TITLE="$PACKAGE-version:(arm64-v8a):$VERSION (Android 8+)"
-APK_PAGE="https://www.apkmirror.com/apk/google-inc/google-text-to-speech-engine/google-text-to-speech-engine-googletts-google-speech-apk_20240205-02_p0-604470300-release/speech-recognition-synthesis-googletts-google-speech-apk_20240205-02_p0-604470300-android-apk-download/"
-
-FILE=$PACKAGE/$PACKAGE.apk
-CHECK_FILE_FUNC_RESULT=false
-FUNC_CHECK_FILE
-FUNC_APKMIRROR_DOWNLOAD
 
