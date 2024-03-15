@@ -393,13 +393,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Bitwarden
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2024.2.0"
+VERSION="2024.3.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2024.2.0/com.x8bit.bitwarden.apk"
+	GITHUB_RELEASE="https://github.com/bitwarden/mobile/releases/download/v2024.3.0/com.x8bit.bitwarden.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -423,14 +423,14 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=FirefoxBeta
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="124.0b7"
+VERSION="124.0b9"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 PACKAGE=FirefoxBeta
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/mozilla-mobile/firefox-android/releases/download/fenix-v124.0b7/fenix-124.0b7-arm64-v8a.apk"
+	GITHUB_RELEASE="https://github.com/mozilla-mobile/firefox-android/releases/download/fenix-v124.0b9/fenix-124.0b9-arm64-v8a.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
