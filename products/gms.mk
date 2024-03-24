@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
 	FDroid \
 	HeyTap \
 	Davx5 \
-	NextCloud \
 	FingerAds \
 	FossifySMS \
 	OpenCamera \
