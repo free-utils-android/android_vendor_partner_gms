@@ -4,7 +4,7 @@
         <permission name="android.permission.DELETE_PACKAGES"/>
         <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <deny-permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <deny-permission name="android.permission.LOADER_USAGE_STATS"/>
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
         <permission name="android.permission.MOVE_PACKAGE"/>

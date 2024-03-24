@@ -13,9 +13,4 @@ PRODUCT_PACKAGES += \
 	ScreenshotTile \
 	SimpleGalleryPro \
 	TraccarClient \
-	GhostCommander \
-	GhostCommanderSMB \
-	GhostCommanderWebDAV \
-	GoogleAuthenticator \
-	MsAuthenticator \
 	additional_repos.xml
