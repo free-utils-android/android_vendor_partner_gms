@@ -163,13 +163,13 @@ fi
 PACKAGE=FDroid
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.19.1"
+VERSION="1.19.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019051.apk"
+	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019052.apk"
 	curl $FDROID_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -232,13 +232,13 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="11.8.2"
+VERSION="11.10.10"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202402/05/08310efe74566d5eec7c2dec219804a7.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202403/29/a93295c00e61fc38583b59351863a20f.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -346,13 +346,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.3.14-ose"
+VERSION="4.3.15-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.14-ose/davx5-ose-4.3.14-ose-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.15-ose/davx5-ose-4.3.15-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -547,13 +547,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2.8.1"
+VERSION="2.8.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.1/com.github.cvzi.screenshottile_114.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.2/com.github.cvzi.screenshottile_115.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
