@@ -2,6 +2,7 @@
 <permissions>
     <privapp-permissions package="com.heytap.market">
         <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_EXISTING_PACKAGES"/>
         <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <deny-permission name="android.permission.INTERACT_ACROSS_USERS"/>
