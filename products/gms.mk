@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
 	FDroid \
 	HeyTap \
 	Davx5 \
+	BaiduInput \
 	FingerAds \
 	FirefoxBeta \
 	FossifySMS \
