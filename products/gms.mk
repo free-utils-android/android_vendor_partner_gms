@@ -7,6 +7,7 @@ PRODUCT_PACKAGES += \
 	HeyTap \
 	Davx5 \
 	FingerAds \
+	FirefoxBeta \
 	FossifySMS \
 	OpenCamera \
 	ScreenshotTile \
