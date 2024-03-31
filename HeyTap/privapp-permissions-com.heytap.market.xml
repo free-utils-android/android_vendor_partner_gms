@@ -2,7 +2,6 @@
 <permissions>
     <privapp-permissions package="com.heytap.market">
         <permission name="android.permission.DELETE_PACKAGES"/>
-        <permission name="android.permission.INSTALL_EXISTING_PACKAGES"/>
         <permission name="android.permission.INSTALL_PACKAGES"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <deny-permission name="android.permission.INTERACT_ACROSS_USERS"/>
@@ -15,6 +14,7 @@
         <deny-permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
         <deny-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
         <deny-permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES"/>
         <permission name="com.android.permission.USE_INSTALLER_V2"/>
     </privapp-permissions>
 </permissions>

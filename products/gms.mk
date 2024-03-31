@@ -6,10 +6,10 @@ PRODUCT_PACKAGES += \
 	FDroid \
 	HeyTap \
 	Davx5 \
-	BaiduInput \
 	FingerAds \
 	FirefoxBeta \
 	FossifySMS \
+	LocalSend \
 	OpenCamera \
 	ScreenshotTile \
 	SimpleGalleryPro \
