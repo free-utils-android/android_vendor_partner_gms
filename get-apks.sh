@@ -163,13 +163,13 @@ fi
 PACKAGE=FDroid
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.19.2"
+VERSION="1.20.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1019052.apk"
+	FDROID_APK="https://f-droid.org/repo/org.fdroid.fdroid_1020050.apk"
 	curl $FDROID_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -232,13 +232,13 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="11.10.10"
+VERSION="11.13.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202403/29/a93295c00e61fc38583b59351863a20f.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202405/17/694f454bfb906d787ad76ff4b53bf480.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -296,13 +296,13 @@ fi
 PACKAGE=TraccarClient
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="7.2"
+VERSION="7.4"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v7.2/app-regular-release.apk"
+	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v7.4/app-regular-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -346,13 +346,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.3.15-ose"
+VERSION="4.3.16.1-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.15-ose/davx5-ose-4.3.15-ose-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.16.1-ose/davx5-ose-4.3.16.1-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -547,13 +547,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2.8.2"
+VERSION="2.8.3"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.2/com.github.cvzi.screenshottile_115.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.3/com.github.cvzi.screenshottile_116.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
