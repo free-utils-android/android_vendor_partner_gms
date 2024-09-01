@@ -232,13 +232,13 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="11.13.0"
+VERSION="11.16.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202405/17/694f454bfb906d787ad76ff4b53bf480.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202407/01/da28978c6a8c46e3206e68a411e92ffe.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -346,13 +346,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.3.16.1-ose"
+VERSION="4.4.2-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.3.16.1-ose/davx5-ose-4.3.16.1-ose-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.4.2-ose/davx5-ose-4.4.2-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -441,13 +441,13 @@ fi
 PACKAGE=OpenCamera
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="1.52"
+VERSION="1.53.1"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	SOURCEFORGE_APK=""https://sourceforge.net/projects/opencamera/files/v_1_52/OpenCamera.apk/download""
+	SOURCEFORGE_APK=""https://sourceforge.net/projects/opencamera/files/v_1_53_1/OpenCamera.apk/download""
 	curl $SOURCEFORGE_APK -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -547,13 +547,13 @@ fi
 PACKAGE=ScreenshotTile
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="2.8.3"
+VERSION="2.11.2"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.8.3/com.github.cvzi.screenshottile_116.apk"
+	GITHUB_RELEASE="https://github.com/cvzi/ScreenshotTile/releases/download/v2.11.2/com.github.cvzi.screenshottile_124.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
