@@ -296,13 +296,13 @@ fi
 PACKAGE=TraccarClient
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="7.4"
+VERSION="7.7"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v7.4/app-regular-release.apk"
+	GITHUB_RELEASE="https://github.com/traccar/traccar-client-android/releases/download/v7.7/app-regular-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
@@ -346,13 +346,13 @@ FUNC_APKMIRROR_DOWNLOAD
 PACKAGE=Davx5
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="4.4.2-ose"
+VERSION="4.4.3.2-ose"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.4.2-ose/davx5-ose-4.4.2-ose-release.apk"
+	GITHUB_RELEASE="https://github.com/bitfireAT/davx5-ose/releases/download/v4.4.3.2-ose/davx5-ose-4.4.3.2-ose-release.apk"
 	curl $GITHUB_RELEASE -L -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
