@@ -232,13 +232,13 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="11.16.0"
+VERSION="11.25.0"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202407/01/da28978c6a8c46e3206e68a411e92ffe.apk"
+	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202411/05/6c3a91f6ff88b33812fdb4baf2438699.apk"
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"

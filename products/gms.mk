@@ -3,4 +3,5 @@ PRODUCT_PACKAGES += \
 	NominatimGeocoderBackend \
 	UnifiedNlp \
 	FDroidPrivilegedExtension \
+	HeyTap \
 	additional_repos.xml
