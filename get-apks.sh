@@ -32,6 +32,18 @@ function FUNC_APKMIRROR_LINK(){
 }
 
 
+
+# input parameter 1:
+OPPOMOBILE_PAGE="https://store.oppomobile.com/"
+# function output result:
+OPPOMOBILE_LINK_FUNC_RESULT=""
+# get download link from package page
+function FUNC_OPPOMOBILE_LINK(){
+	OPPOMOBILE_LINK_FUNC_RESULT=$(curl $APK_PAGE -A "$USER_AGENT" | xidel - --xpath '//*[@id="market"]/@href')
+}
+
+
+
 # input parameter 1:
 FILE=""
 # input parameter 2:
@@ -238,7 +250,8 @@ CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
-	HEYTAP_APK="https://storedl1.nearme.com.cn/apk/202411/05/6c3a91f6ff88b33812fdb4baf2438699.apk"
+	FUNC_OPPOMOBILE_LINK
+	HEYTAP_APK=$OPPOMOBILE_LINK_FUNC_RESULT
 	curl $HEYTAP_APK -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
