@@ -204,7 +204,7 @@ FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	GITLAB_RELEASE="https://gitlab.com/AuroraOSS/AuroraServices/uploads/c22e95975571e9db143567690777a56e/AuroraServices_v1.1.1.apk"
-	#curl $GITLAB_RELEASE -o $FILE
+	curl $GITLAB_RELEASE -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
