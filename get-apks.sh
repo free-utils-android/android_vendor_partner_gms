@@ -15,6 +15,13 @@ if [[ ! -x "$(command -v xidel)" ]]; then
 	return 1
 fi
 
+if [[ ! -x "$(command -v jq)" ]]; then
+    echo "jq could not be found"
+	echo "Ctrl+C to stop or wait 120s"
+    sleep 120
+	return 1
+fi
+
 USER_AGENT="Mozilla/5.0 (  ; ; ; rv:) / /"
 
 # input parameter 1:
@@ -32,16 +39,14 @@ function FUNC_APKMIRROR_LINK(){
 }
 
 
-
-# input parameter 1:
-OPPOMOBILE_PAGE="https://store.oppomobile.com/"
+# "https://store.oppomobile.com/" //*[@id="market"]
+# The page uses jequery to update url elements
 # function output result:
 OPPOMOBILE_LINK_FUNC_RESULT=""
 # get download link from package page
 function FUNC_OPPOMOBILE_LINK(){
-	OPPOMOBILE_LINK_FUNC_RESULT=$(curl $APK_PAGE -A "$USER_AGENT" | xidel - --xpath '//*[@id="market"]/@href')
+	OPPOMOBILE_LINK_FUNC_RESULT=$(curl 'https://www.heytapmobi.com/cdoweb/download/url' -H 'content-type: application/json;charset=UTF-8' --data-raw '["com.heytap.market"]' | jq -r '.[0].link')
 }
-
 
 
 # input parameter 1:
@@ -251,8 +256,7 @@ FUNC_CHECK_FILE
 
 if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	FUNC_OPPOMOBILE_LINK
-	HEYTAP_APK=$OPPOMOBILE_LINK_FUNC_RESULT
-	curl $HEYTAP_APK -o $FILE
+	curl $OPPOMOBILE_LINK_FUNC_RESULT -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
 	echo "$TITLE:got"
 fi
