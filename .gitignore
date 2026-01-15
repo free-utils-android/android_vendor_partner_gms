@@ -1,2 +1,3 @@
 *.apk
 .version_code
+*.DS_Store

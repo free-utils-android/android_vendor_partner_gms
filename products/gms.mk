@@ -1,7 +1,4 @@
 PRODUCT_PACKAGES += \
-	IchnaeaNlpBackend \
-	NominatimGeocoderBackend \
-	UnifiedNlp \
 	FDroidPrivilegedExtension \
 	AuroraServices \
 	HeyTap \
