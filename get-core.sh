@@ -94,7 +94,7 @@ fi
 PACKAGE=HeyTap
 
 FILE=$PACKAGE/$PACKAGE.apk
-VERSION="12.15.0"
+VERSION="26.7.0_CN"
 TITLE="$PACKAGE-version:$VERSION"
 CHECK_FILE_FUNC_RESULT=false
 FUNC_CHECK_FILE
@@ -103,5 +103,11 @@ if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
 	FUNC_OPPOMOBILE_LINK
 	curl $OPPOMOBILE_LINK_FUNC_RESULT -o $FILE
 	echo $VERSION > $PACKAGE/$VERSION_CODE
-	echo "$TITLE:got"
+
+	FUNC_CHECK_FILE
+	if [[ $CHECK_FILE_FUNC_RESULT == false ]]; then
+		echo "new got $VERSION"
+	else
+		echo "$TITLE:got"
+	fi
 fi
