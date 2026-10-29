@@ -15,7 +15,7 @@ jobs:
       - run: pipx install pipenv
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'
           cache: 'pipenv'
           cache-dependency-path: 'updater/Pipfile.lock'
       - run: pipenv install
